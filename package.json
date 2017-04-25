@@ -26,6 +26,6 @@
     "eject": "react-scripts eject",
     "build-css": "node-sass src/stylesheets/sass/main.sass src/stylesheets/css/main.css",
     "watch-css": "node-sass src/stylesheets/sass/main.sass src/stylesheets/css/main.css -w",
-    "deploy": "npm run build&&master -d build"
+    "deploy": "npm run build&&gh-pages -d build"
   }
 }
