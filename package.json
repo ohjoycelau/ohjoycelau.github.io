@@ -1,5 +1,5 @@
 {
-  "name": "newP",
+  "name": "ohjoycelau.github.io",
   "homepage": "https://github.com/ohjoycelau/ohjoycelau.github.io.git",
   "version": "0.2.0",
   "private": true,
@@ -26,6 +26,6 @@
     "eject": "react-scripts eject",
     "build-css": "node-sass src/stylesheets/sass/main.sass src/stylesheets/css/main.css",
     "watch-css": "node-sass src/stylesheets/sass/main.sass src/stylesheets/css/main.css -w",
-    "deploy": "npm run build&&gh-pages -d build"
+    "deploy": "npm run build&&gh-pages -d build -b master"
   }
 }

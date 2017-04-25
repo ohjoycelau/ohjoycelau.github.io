@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, } from 'react-router-dom';
-
+import ScrollToTop from './ScrollToTop';
 
 // Content
 import Home from './content/Home';
@@ -26,14 +26,16 @@ class App extends Component {
 							<li><Link to="/Resume">Resume</Link></li>
 						</ul>
 					</nav>
-					<main>
-						<Route exact path="/" component={Home} />
-						<Route path="/USC-Annenberg" component={Annenberg} />
-						<Route path="/Pandora-Blog" component={Blog} />
-						<Route path="/Pandora-Dashboard" component={Eng} />
-						<Route path="/Whiteboard-Sessions" component={Whiteboard} />
-						<Route path="/Resume" component={Resume} />
-					</main>
+					<ScrollToTop>
+						<main>
+							<Route exact path="/" component={Home} />
+							<Route path="/USC-Annenberg" component={Annenberg} />
+							<Route path="/Pandora-Blog" component={Blog} />
+							<Route path="/Pandora-Dashboard" component={Eng} />
+							<Route path="/Whiteboard-Sessions" component={Whiteboard} />
+							<Route path="/Resume" component={Resume} />
+						</main>
+					</ScrollToTop>
 				</div>
 			</Router>
 		);

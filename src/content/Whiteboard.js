@@ -39,7 +39,7 @@ function Whiteboard() {
 			</div>
 			<div className="section--center">
 				<ul>
-					<li><Link to="/Pandora-Dashboard">Previous Project</Link></li>
+					<li><Link to="/Pandora-Dashboard">Previous</Link></li>
 					<li><Link to="/Resume">See Resume</Link></li>
 				</ul>
 			</div>
