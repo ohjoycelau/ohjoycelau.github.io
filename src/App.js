@@ -18,7 +18,7 @@ class App extends Component {
 				<div>
 					<nav>
 						<ul>
-							<li><Link to="/">Home</Link></li>
+							<li><Link to="/Home">Home</Link></li>
 							<li><Link to="/USC-Annenberg">USC Annenberg</Link></li>
 							<li><Link to="/Pandora-Blog">Pandora Blog</Link></li>
 							<li><Link to="/Pandora-Dashboard">Pandora Dashboard</Link></li>
@@ -28,7 +28,7 @@ class App extends Component {
 					</nav>
 					<ScrollToTop>
 						<main>
-							<Route exact path="/" component={Home} />
+							<Route exact path="/Home" component={Home} />
 							<Route path="/USC-Annenberg" component={Annenberg} />
 							<Route path="/Pandora-Blog" component={Blog} />
 							<Route path="/Pandora-Dashboard" component={Eng} />
