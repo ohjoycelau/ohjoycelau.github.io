@@ -39,18 +39,26 @@ a {
 img {
   width: 100%; }
 
-ul {
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  ul a, li a {
+    text-shadow: none;
+    box-shadow: none;
+    background: none; }
+
+ul.list {
   margin: 0;
   padding: 0; }
-
-li {
-  list-style: none outside;
-  margin-left: 2rem; }
-  li:before {
-    width: 2rem;
-    margin-left: -2rem;
-    display: inline-block;
-    content: "•"; }
+  ul.list li {
+    list-style: none outside;
+    margin-left: 2rem; }
+    ul.list li:before {
+      width: 2rem;
+      margin-left: -2rem;
+      display: inline-block;
+      content: "•"; }
 
 /* Layout */
 html, body {
@@ -81,5 +89,31 @@ nav {
 
 .flex {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center; }
+
+/* Objects */
+.button {
+  border: 0.25rem solid #3464ff; }
+
+/* Annenberg */
+#annenberg--menu, #annenberg--calendar, #annenberg--event {
+  padding-left: 10%;
+  padding-right: 10%; }
+
+#annenberg--menu, #annenberg--mbl, #annenberg--event {
+  background-size: 100% 100%;
+  background-color: #C9292A;
+  background: linear-gradient(to bottom right, #C9292A, #981B1E);
+  background: -o-linear-gradient(bottom right, #C9292A, #981B1E);
+  background: -moz-linear-gradient(bottom right, #C9292A, #981B1E);
+  background: -webkit-linear-gradient(left top, #C9292A, #981B1E); }
+
+#annenberg--calendar {
+  background-color: #fff; }
+
+#annenberg--mbl .flex {
+  width: 90%;
+  margin: 0 auto; }
+  #annenberg--mbl .flex img {
+    width: 30%; }
