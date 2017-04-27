@@ -27,9 +27,9 @@ function Eng() {
 				</div>
 			</div>
 			<div className="section--center">
-				<ul>
-					<li><Link to="/Pandora-Blog">Previous</Link></li>
-					<li><Link to="/Whiteboard-Sessions">Next Project</Link></li>
+				<ul className="flex">
+					<li><Link className="button button--prev" to="/Pandora-Blog">Previous</Link></li>
+					<li><Link className="button button--next" to="/Whiteboard-Sessions">Next Project</Link></li>
 				</ul>
 			</div>
 		</div>

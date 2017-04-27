@@ -9,9 +9,8 @@ function Home() {
 				<p><h2><b>Joyce is currently designing visual systems and wrangling sass at <a href="#">Pandora</a> in Oakland, California.</b></h2></p>
 				<p>Favorite things includes cats. Allergies includes cats. This Friday afternoon likely includes drinking tea, <a href="#">kpop</a>, and checking <a href="#">instagram</a>.</p>
 				<ul>
-					<li><Link to="/Resume">Resume</Link></li>
-					<li><a href="#">Drop a line</a></li>
-					<li><Link to="/USC-Annenberg"><b>See projects</b></Link></li>
+					<li><Link className="button" to="/Resume">Resume</Link> <Link className="button" to="#">Drop a line</Link></li>
+					<li><Link className="button button--next" to="/USC-Annenberg"><b>See projects</b></Link></li>
 				</ul>
 			</div>
 		</div>

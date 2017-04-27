@@ -18,12 +18,12 @@ class App extends Component {
 				<div>
 					<nav>
 						<ul>
-							<li><Link to="/">Home</Link></li>
-							<li><Link to="/USC-Annenberg">USC Annenberg</Link></li>
-							<li><Link to="/Pandora-Blog">Pandora Blog</Link></li>
-							<li><Link to="/Pandora-Dashboard">Pandora Dashboard</Link></li>
-							<li><Link to="/Whiteboard-Sessions">Whiteboard Sessions</Link></li>
-							<li><Link to="/Resume">Resume</Link></li>
+							<li><Link className="button" to="/">Home</Link></li>
+							<li><Link className="button" to="/USC-Annenberg">USC Annenberg</Link></li>
+							<li><Link className="button" to="/Pandora-Blog">Pandora Blog</Link></li>
+							<li><Link className="button" to="/Pandora-Dashboard">Pandora Dashboard</Link></li>
+							<li><Link className="button" to="/Whiteboard-Sessions">Whiteboard Sessions</Link></li>
+							<li><Link className="button" to="/Resume">Resume</Link></li>
 						</ul>
 					</nav>
 					<ScrollToTop>
