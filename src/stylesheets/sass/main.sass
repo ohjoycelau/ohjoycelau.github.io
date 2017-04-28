@@ -62,7 +62,11 @@ a
 		// color: $color-blue-dark
 		// @include underline($color-blue-dark)
 img
-	width: 100%
+	// width: 100%
+	width: 80%
+	max-width: 84rem
+	margin: 0 auto
+	display: block
 ul, li
 	margin: 0
 	padding: 0
@@ -97,6 +101,9 @@ nav
 
 
 /* Styles */
+.full
+	width: 100%
+	max-width: auto
 .flex
 	display: flex
 	justify-content: space-between
@@ -165,14 +172,14 @@ a:link, a:visited, a:hover, a:active
 
 /* Annenberg */
 #annenberg--menu, #annenberg--calendar, #annenberg--event
-	@include width80
+	// @include width80
 #annenberg--menu, #annenberg--mbl, #annenberg--event
 	@include gradient(#C9292A, #981B1E)
 #annenberg--calendar
 	background-color: #fff
 #annenberg--mbl
 	.flex
-		width: 90%
+		@include width80
 		margin: 0 auto
 		img
 			width: 30%
@@ -181,8 +188,7 @@ a:link, a:visited, a:hover, a:active
 	background-color: #00ADEE
 	color: $color-grey
 #blog--r-1, #blog--r-2
-	@include width90
-	max-width: 84rem
+	// @include width90
 	margin-left: auto
 	margin-right: auto
 	img

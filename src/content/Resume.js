@@ -16,7 +16,7 @@ function Resume() {
 				<br/>2013, Marketing Intern, <a href="http://aysymphony.org" target="blank">American Youth Symphony</a></p>			
 			</div>
 			<div className="section--full">
-				<img src={require("./images/alpaca.jpg")} />
+				<img className="full" src={require("./images/alpaca.jpg")} />
 			</div>
 			<div className="section--center">
 				<ul>

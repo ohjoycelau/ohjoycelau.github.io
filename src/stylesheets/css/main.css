@@ -33,7 +33,10 @@ a, a:link, a:visited {
   box-shadow: inset 0 -0.075em #f2f2f2, inset 0 -0.15em #3464ff; }
 
 img {
-  width: 100%; }
+  width: 80%;
+  max-width: 84rem;
+  margin: 0 auto;
+  display: block; }
 
 ul, li {
   margin: 0;
@@ -69,6 +72,10 @@ nav {
   left: 0; }
 
 /* Styles */
+.full {
+  width: 100%;
+  max-width: auto; }
+
 .flex {
   display: flex;
   justify-content: space-between;
@@ -133,10 +140,6 @@ a:link.button, a:visited.button, a:hover.button, a:active.button {
     border-right: 0.145em solid #f2f2f2; }
 
 /* Annenberg */
-#annenberg--menu, #annenberg--calendar, #annenberg--event {
-  padding-left: 10%;
-  padding-right: 10%; }
-
 #annenberg--menu, #annenberg--mbl, #annenberg--event {
   background-size: 100% 100%;
   background-color: #C9292A;
@@ -149,7 +152,8 @@ a:link.button, a:visited.button, a:hover.button, a:active.button {
   background-color: #fff; }
 
 #annenberg--mbl .flex {
-  width: 90%;
+  padding-left: 10%;
+  padding-right: 10%;
   margin: 0 auto; }
   #annenberg--mbl .flex img {
     width: 30%; }
@@ -160,9 +164,6 @@ a:link.button, a:visited.button, a:hover.button, a:active.button {
   color: #f2f2f2; }
 
 #blog--r-1, #blog--r-2 {
-  padding-left: 5%;
-  padding-right: 5%;
-  max-width: 84rem;
   margin-left: auto;
   margin-right: auto; }
   #blog--r-1 img, #blog--r-2 img {
