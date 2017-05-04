@@ -75,7 +75,7 @@ nav {
 /* Styles */
 .full {
   width: 100%;
-  max-width: auto; }
+  max-width: none; }
 
 .flex {
   display: flex;

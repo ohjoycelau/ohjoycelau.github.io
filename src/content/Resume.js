@@ -10,10 +10,10 @@ function Resume() {
 				
 				<p>2016-present, Product Designer, <a href="http://pandora.com">Pandora</a>
 				<br/>2015, Web Designer / Developer, <a href="http://pandora.com">Pandora</a>
-				<br/>2014, Web Designer / Developer, <a href="http://annenberg.usc.edu">USC Annenberg</a>
+				<br/>2014, Web Designer / Developer, <a href="http://annenberg.usc.edu">USC&nbsp;Annenberg</a>
 				<br/>2014, Visual Creative Intern, <a href="http://pandora.com">Pandora</a>
 				<br/>2013, Graphic Design Intern, <a href="http://blitzagency.com">BLITZ</a>
-				<br/>2013, Marketing Intern, <a href="http://aysymphony.org" target="blank">American Youth Symphony</a></p>			
+				<br/>2013, Marketing Intern, <a href="http://aysymphony.org" target="blank">American&nbsp;Youth&nbsp;Symphony</a></p>			
 			</div>
 			<div className="section--full">
 				<img className="full" src={require("./images/alpaca.jpg")} />
