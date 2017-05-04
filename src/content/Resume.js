@@ -19,9 +19,8 @@ function Resume() {
 				<img className="full" src={require("./images/alpaca.jpg")} />
 			</div>
 			<div className="section--center">
-				<ul>
-					<li><Link to="/Whiteboard-Sessions">Previous Project</Link></li>
-					<li><Link to="/">Go Home</Link></li>
+				<ul className="flex">
+					<li><Link className="button button--next" to="/">Back Home</Link></li>
 				</ul>
 			</div>
 		</div>

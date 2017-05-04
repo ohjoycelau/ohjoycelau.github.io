@@ -10,37 +10,43 @@ function Whiteboard() {
 				<p>The Whiteboard is an unusual and finicky art medium. The whiteboard marker is deceivingly permanent with its delicate ink — like any other medium, it has it's uniques advantages and disadvantages. But actually, despite its challenges, I have come to love it and it's temporal qualities and I continue to discover new marks this medium has to offer.</p>
 				<p>Tools of the trade include the Universal Bullet Tip Marker and the lime green Expo Fine Point marker for sketching.</p>
 			</div>
-			<div className="section--full">
-				<img src={require("./images/wbs/wb-aurora.jpg")} />
-				<img src={require("./images/wbs/wb-aurora.jpg")} />
-				<img src={require("./images/wbs/wb-aurora.jpg")} />
+			<div className="section--full flex" id="wbs--yt">
+				<div className="yt">
+						<iframe src="https://www.youtube.com/embed/9krkfvdH9vQ?autoplay=0&amp;showinfo=0&amp;controls=1" frameborder="0" allowfullscreen=""></iframe>
+				</div>
+				<div className="yt">
+					<iframe src="https://www.youtube.com/embed/5skBr_96dPc?autoplay=0&amp;showinfo=0&amp;controls=1" frameborder="0" allowfullscreen=""></iframe>
+				</div>
+				<div className="yt">
+					<iframe src="https://www.youtube.com/embed/VZ8L_8wC4LU?autoplay=0&amp;showinfo=0&amp;controls=1" frameborder="0" allowfullscreen=""></iframe>
+				</div>
 			</div>
 			<div className="section--full">
-				<img src={require("./images/wbs/wb-aurora.jpg")} />
+				<img className="full" src={require("./images/wbs/wb-aurora.jpg")} />
 			</div>
 			<div className="section--full">
-				<img src={require("./images/wbs/wb-gow.jpg")} />
+				<img className="full" src={require("./images/wbs/wb-gow.jpg")} />
 			</div>
 			<div className="section--full">
-				<img src={require("./images/wbs/wb-hollymiranda.jpg")} />
+				<img className="full" src={require("./images/wbs/wb-hollymiranda.jpg")} />
 			</div>
 			<div className="section--full">
-				<img src={require("./images/wbs/wb-suspect.jpg")} />
-				<img src={require("./images/wbs/wb-suspect-1.jpg")} />
+				<img className="full" src={require("./images/wbs/wb-suspect.jpg")} />
+				<img className="full" src={require("./images/wbs/wb-suspect-1.jpg")} />
 			</div>
 			<div className="section--full">
-				<img src={require("./images/wbs/wb-moontaxi.jpg")} />
+				<img className="full" src={require("./images/wbs/wb-moontaxi.jpg")} />
 			</div>
-			<div className="section--full">
+			<div className="section--full" id="wbs--ig">
 				<div className="section--center">
-					<button>See More On Instagram</button>
+					<a className="button inverted" href="#">See More On Instagram</a>
 					<p>Check out the rest of the talented whiteboard illustration team – Carolyn Jaeger, Shannon Ling, Jane Choi, Trent Thibodeaux and Jehan Khateeb.</p> 
 				</div>
 			</div>
 			<div className="section--center">
-				<ul>
-					<li><Link to="/Pandora-Dashboard">Previous Project</Link></li>
-					<li><Link to="/">Go Home</Link></li>
+				<ul className="flex">
+					<li><Link className="button button--prev" to="/Pandora-Dashboard">Previous Project</Link></li>
+					<li><Link className="button button--next" to="/">Go Home</Link></li>
 				</ul>
 			</div>
 		</div>

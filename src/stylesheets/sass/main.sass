@@ -33,8 +33,8 @@ $color-blue-dark: #2950d0
 	margin: 0
 	display: inline
 	font-family: 'Work Sans', 'Helvetica', sans-serif
-	font-size: 2.1rem
-	line-height: 1.45em
+	font-size: 1.9rem
+	line-height: 1.53em
 	font-weight: 500
 	color: $color-blue
 	-webkit-font-smoothing: antialiased
@@ -80,6 +80,8 @@ html, body
 	// display: flex
 main
 	width: 100%
+	max-width: 100vw
+	overflow-x: hidden
 	padding: 5rem 0
 section
 	width: 100%
@@ -95,9 +97,8 @@ section
 	&[class="--full"]
 		width: 100vw
 nav
-	position: fixed
-	top: 0
-	left: 0
+	background-color: pink
+	display: none
 
 
 /* Styles */
@@ -187,15 +188,19 @@ a:link, a:visited, a:hover, a:active
 #blog--r
 	background-color: #00ADEE
 	color: $color-grey
+	#blog--r-text
+		padding: 2rem 0
 #blog--r-1, #blog--r-2
-	// @include width90
+	@include width90
+	max-width: 84rem
 	margin-left: auto
 	margin-right: auto
 	img
-		width: 49%
+		width: 48%
 #blog--mbl
 	width: 120%
 	margin-left: -10%
+	padding: 2rem 0
 	img
 		width: 16.5%
 #blog--screens
@@ -203,3 +208,42 @@ a:link, a:visited, a:hover, a:active
 #blog--outro
 	background-color: darken($color-blue-dark, 15%)
 	color: $color-grey
+
+/* Engineering Dashboard */
+#eng--og
+	// background-color: orange
+	background-image: url("../../content/images/dashboard/dash-original.jpg")
+	background-size: cover
+	height: 15rem
+#eng--screens
+	background-color: #fff
+#eng--mbl
+	background-color: #fff
+	.flex
+		@include width80
+		img
+			width: 23%
+
+#wbs--yt
+	.yt
+		background-color: #ddd
+		padding: 0
+		margin: 0
+		width: 100%
+		height: 56.25vw
+		iframe
+			width: 100%
+			height: 100%
+			border: 0
+	@media screen and (min-width: 768px)
+		flex-wrap: nowrap
+		.yt
+			padding: 0
+			margin: 0
+			width: 33.333%
+			height: 18.75vw
+#wbs--ig
+	background-color: #333
+	color: #fff
+
+

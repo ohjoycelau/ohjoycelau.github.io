@@ -14,8 +14,8 @@ body, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   display: inline;
   font-family: 'Work Sans', 'Helvetica', sans-serif;
-  font-size: 2.1rem;
-  line-height: 1.45em;
+  font-size: 1.9rem;
+  line-height: 1.53em;
   font-weight: 500;
   color: #3464ff;
   -webkit-font-smoothing: antialiased;
@@ -50,6 +50,8 @@ html, body {
 
 main {
   width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
   padding: 5rem 0; }
 
 section {
@@ -67,9 +69,8 @@ section {
     width: 100vw; }
 
 nav {
-  position: fixed;
-  top: 0;
-  left: 0; }
+  background-color: pink;
+  display: none; }
 
 /* Styles */
 .full {
@@ -162,16 +163,22 @@ a:link.button, a:visited.button, a:hover.button, a:active.button {
 #blog--r {
   background-color: #00ADEE;
   color: #f2f2f2; }
+  #blog--r #blog--r-text {
+    padding: 2rem 0; }
 
 #blog--r-1, #blog--r-2 {
+  padding-left: 5%;
+  padding-right: 5%;
+  max-width: 84rem;
   margin-left: auto;
   margin-right: auto; }
   #blog--r-1 img, #blog--r-2 img {
-    width: 49%; }
+    width: 48%; }
 
 #blog--mbl {
   width: 120%;
-  margin-left: -10%; }
+  margin-left: -10%;
+  padding: 2rem 0; }
   #blog--mbl img {
     width: 16.5%; }
 
@@ -181,3 +188,44 @@ a:link.button, a:visited.button, a:hover.button, a:active.button {
 #blog--outro {
   background-color: #1c3790;
   color: #f2f2f2; }
+
+/* Engineering Dashboard */
+#eng--og {
+  background-image: url("../../content/images/dashboard/dash-original.jpg");
+  background-size: cover;
+  height: 15rem; }
+
+#eng--screens {
+  background-color: #fff; }
+
+#eng--mbl {
+  background-color: #fff; }
+  #eng--mbl .flex {
+    padding-left: 10%;
+    padding-right: 10%; }
+    #eng--mbl .flex img {
+      width: 23%; }
+
+#wbs--yt .yt {
+  background-color: #ddd;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 56.25vw; }
+  #wbs--yt .yt iframe {
+    width: 100%;
+    height: 100%;
+    border: 0; }
+
+@media screen and (min-width: 768px) {
+  #wbs--yt {
+    flex-wrap: nowrap; }
+    #wbs--yt .yt {
+      padding: 0;
+      margin: 0;
+      width: 33.333%;
+      height: 18.75vw; } }
+
+#wbs--ig {
+  background-color: #333;
+  color: #fff; }
