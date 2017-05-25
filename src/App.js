@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link, } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import ScrollToTop from './ScrollToTop';
 
 // Content
@@ -16,6 +16,15 @@ class App extends Component {
 		return (
 			<Router>
 				<div>
+					<nav>
+						<ul>
+							<li><Link to="/">Home</Link></li>
+							<li><Link to="/USC-Annenberg">Annenberg</Link></li>
+							<li><Link to="/Pandora-Blog">Blog</Link></li>
+							<li><Link to="/Pandora-Dashboard">Dashboard</Link></li>
+							<li><Link to="/Whiteboard-Sessions">Whiteboard</Link></li>
+						</ul>
+					</nav>
 					<ScrollToTop>
 						<main>
 							<Route exact path="/" component={Home} />
