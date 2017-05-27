@@ -7,7 +7,7 @@ function Home() {
 		<div>
 			<main>
 				<section className="section-default">
-					<p className="font-emphasis"><Link to="/Resume">Joyce Lau</Link> is a product designer, currently designing visual systems and wrangling sass at <a target="blank" href="https://pandora.com">Pandora</a> in <a target="blank" href="https://www.google.com/maps/placelists/list/1Txuf3VoxvgevYPY3ZfRVgmjlqcU">Oakland, California</a>.</p>
+					<p className="font-emphasis"><Link to="/Resume">Joyce Lau</Link> is a product designer, currently designing visual systems and wrangling sass at <a target="blank" href="https://pandora.com">Pandora</a> in <a target="blank" href="https://www.google.com/maps/placelists/list/1Txuf3VoxvgevYPY3ZfRVgmjlqcU">Oakland,&nbsp;California</a>.</p>
 					<p className="font-primary">I draw things on <a href="http://instagram.com/ohjoycelau" target="blank">Instagram</a>, but I'm also professional, so check out <a href="http://linkedin.com/in/ohjoycelau" target="blank">Linkedin</a>. <a href="mailto:ohjoycelau@gmail.com?subject=Ahoy!" target="blank">Drop a line</a> to see more examples of my work or to just chat.</p>
 					<p><Link className="button button-inverted" to="/USC-Annenberg">See Projects</Link></p>
 				</section>
