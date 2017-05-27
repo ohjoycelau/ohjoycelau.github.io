@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 import ScrollToTop from './ScrollToTop';
 
 // Content
@@ -12,18 +12,21 @@ import Resume from './content/Resume';
 
 
 class App extends Component {
+	
+	navTo() {
+		console.log('this.props');
+	}
+
 	render() {
 		return (
 			<Router>
-				<div>
-					<nav>
-						<ul>
-							<li><Link to="/">Home</Link></li>
-							<li><Link to="/USC-Annenberg">Annenberg</Link></li>
-							<li><Link to="/Pandora-Blog">Blog</Link></li>
-							<li><Link to="/Pandora-Dashboard">Dashboard</Link></li>
-							<li><Link to="/Whiteboard-Sessions">Whiteboard</Link></li>
-						</ul>
+				<div>	
+					<nav className="global-nav">
+						<NavLink onClick={this.navTo.bind(this)} activeClassName="active" exact to="/">Home</NavLink>
+						<NavLink onClick={this.navTo.bind(this)} activeClassName="active" to="/USC-Annenberg">Annenberg</NavLink>
+						<NavLink onClick={this.navTo.bind(this)} activeClassName="active" to="/Pandora-Blog">Blog</NavLink>
+						<NavLink onClick={this.navTo.bind(this)} activeClassName="active" to="/Pandora-Dashboard">Dashboard</NavLink>
+						<NavLink onClick={this.navTo.bind(this)} activeClassName="active" to="/Whiteboard-Sessions">Whiteboard</NavLink>
 					</nav>
 					<ScrollToTop>
 						<main>

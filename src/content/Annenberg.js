@@ -7,8 +7,8 @@ function Annenberg() {
 		<div>
 
 			<main>
-				<section className="section-default">
-					<p className="font-emphasis">USC Annenberg School for Communication and Journalism</p>
+				<section className="section-default font-emphasis">
+					<p>USC Annenberg School for Communication and Journalism</p>
 				</section>
 				<section className="section-default font-primary">
 					<p>
@@ -37,17 +37,21 @@ function Annenberg() {
 						</ul>
 					</p>
 				</section>
-				<section className="section-full bg-grey">
+				<section className="section-full bg-grey padding-8rem">
+					<video className="maxWidth-900" loop autoPlay>
+						<source src={require("./images/annenberg/1-nav.mp4")} type="video/mp4" />
+					</video>
+					<br/>
 					<img className="maxWidth-900" src={require("./images/annenberg/2-nav.png")} />
 				</section>
-				<section className="section-full">
+				<section className="section-full padding-8rem">
 					<img className="maxWidth-900" src={require("./images/annenberg/3-home.png")} />
 					<img className="maxWidth-900" src={require("./images/annenberg/4-home.png")} />
 				</section>
-				<section className="section-full bg-grey">
+				<section className="section-full padding-8rem bg-grey">
 					<img className="maxWidth-1100" src={require("./images/annenberg/5-mobile.png")} />
 				</section>
-				<section className="section-full">
+				<section className="section-full padding-8rem">
 					<img className="maxWidth-900" src={require("./images/annenberg/6-event.png")} />
 					<img className="maxWidth-900" src={require("./images/annenberg/7-event.png")} />
 					<section className="section-default font-primary">
@@ -56,7 +60,13 @@ function Annenberg() {
 							Annenberg hosts countless events throughout the year, however discoverability was difficult and lists were overwhelming. Revamping the traditional 7-day calendar, utilizing flexible widths for days that have events versus days without can give more breathing room when available.
 						</p>
 					</section>
-					<img className="maxWidth-900" src={require("./images/annenberg/8-event.png")} />
+					<video className="maxWidth-900" autoPlay loop type="video/mp4" src={require("./images/annenberg/8-event.mp4")} ></video>
+				</section>
+				<section className="section-full bg-grey">
+					<section className="section-last section-nav">
+						<Link className="button" to="/">Back Home</Link>
+						<Link className="button" to="/Pandora-Blog">Next Project</Link>
+					</section>
 				</section>
 			</main>
 		</div>

@@ -4,34 +4,65 @@ import { BrowserRouter as Router, Route, Link, } from 'react-router-dom';
 function Eng() {
 	return (
 		<div>
-			<div className="section--center">
-				<p><b>Product Engineering Dashboard</b></p>
-				<p>The Product Engineering Dashboard processes and reports the health and state of each server and the virtual machines within. The system spits all the data out in a rudimentary system of tables, colors, and (unlabled) numbers. This highly technical data heavy dashboard was a huge intellectual challenge.</p>
-				<p>We needed a dashboard that was informative during outages, pushes, and just running in the background on the TV on the engineering floor. It needed to be accessible at a glance but finely detailed in a readily discoverable way.</p>
-			</div>
-			<div className="section--full" id="eng--og"></div>
-			<div className="section--full" id="eng--screens">
-				<img src={require("./images/dashboard/dash-layer1.png")} />
-				<img src={require("./images/dashboard/dash-layer2.png")} />
-			</div>
-			<div className="section--center">
-				<p>I led researching user's pain points and designing solutions for complex data. I discovered, as a smart user and expert in the data, users tended to seek information in a targeted way.</p>
-				<p>Working with an engineer to help with the code on this project freed me to design more nuanced interactions that provided a better experience. We designed an improved search and optimized the logic by nesting information.</p>
-			</div>
-			<div className="section--full" id="eng--mbl">
-				<div className="flex">
-					<img src={require("./images/dashboard/mbl-dash-a.png")} />
-					<img src={require("./images/dashboard/mbl-dash-b.png")} />
-					<img src={require("./images/dashboard/mbl-dash-c.png")} />
-					<img src={require("./images/dashboard/mbl-dash-d.png")} />
-				</div>
-			</div>
-			<div className="section--center">
-				<ul className="flex">
-					<li><Link className="button button--prev" to="/Pandora-Blog">Previous</Link></li>
-					<li><Link className="button button--next" to="/Whiteboard-Sessions">Next Project</Link></li>
-				</ul>
-			</div>
+			<main>
+				<section className="section-default font-emphasis">
+					<p>Product Engineering Dashboard</p>
+				</section>
+				<section className="section-default font-primary">
+					<p>
+						<b>Goals</b><br/>
+						Replace the server auto generated data display with a more usable interface. The resulting dashboard will display and alert important events for engineers on-call and shown on a large screen in the team area.
+					</p>
+					<p>
+						<b>Process</b><br/>
+						It was challenging figuring out requirements on a subject I knew close to zero about. I conducted interviews with engineers on and related to the team, honing in on the data views needed. I neede to balance simplified summaries yet still empower engineers to find the complex data they needed.
+					</p>
+				</section>
+				<section className="section-full">
+					<img src={require("./images/dashboard/1-pre.jpg")} />
+				</section>
+				<section className="section-default font-primary">
+					<p>
+						<b>User Profile</b><br/>
+						<ul>
+							<li>Server engineers</li>
+							<li>Highly skilled and technical, well versed in content</li>
+						</ul>
+					</p>
+					<p>
+						<b>Persona</b><br/>
+						<ul>
+							<li>Chris, 38, server engineer on-call</li>
+							<li>Monitoring server statuses in the background both during and outside business hours, during shift</li>
+							<li>Responsible for fixing immediate problems indicated by the system</li>
+						</ul>
+					</p>
+					<p>
+						<b>Scenario</b><br/>
+						<ul>
+							<li>A problem occurs in a server group.</li>
+							<li>Chris, on-call sees a notification about the problem.</li>
+							<li>They must identify and remedy the problem on the correct server in the correct group on the problem axis.</li>
+							<li>Chris monitors the dashboard as different solutions are tested.</li>
+							<li>When problem is fixed and the error is cached and a fixed state is recorded.</li>
+							<li>Chris backgrounds the dashboard until the next error notification.</li>
+						</ul>
+					</p>
+				</section>
+				<section className="section-full padding-8rem bg-grey">
+					<img className="maxWidth-900" src={require("./images/dashboard/2-dash.png")} />
+					<img className="maxWidth-900" src={require("./images/dashboard/3-dash.png")} />
+				</section>
+				<section className="section-full padding-8rem">
+					<img className="maxWidth-1100" src={require("./images/dashboard/4-mbl.png")} />
+				</section>
+				<section className="section-full bg-grey">
+					<section className="section-last section-nav">
+						<Link className="button" to="/Pandora-Blog">Previous</Link>
+						<Link className="button" to="/Whiteboard-Sessions">Next Project</Link>
+					</section>
+				</section>
+			</main>
 		</div>
 	)
 }

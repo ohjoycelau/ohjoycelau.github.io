@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link, } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Link, } from 'react-router-dom';
 
 function Resume() {
 	return (
@@ -16,7 +16,7 @@ function Resume() {
 				<br/>2013, Marketing Intern, <a href="http://aysymphony.org" target="blank">American&nbsp;Youth&nbsp;Symphony</a></p>			
 			</div>
 			<div className="section--full">
-				<img className="full" src={require("./images/alpaca.jpg")} />
+				<img className="full" src={require("./images/alpaca.jpg")} alt="Alpaca good time into your weekend ;)" />
 			</div>
 			<div className="section--center">
 				<ul className="flex">

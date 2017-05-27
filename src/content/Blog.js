@@ -5,59 +5,75 @@ import { BrowserRouter as Router, Route, Link, } from 'react-router-dom';
 function Blog() {
 	return (
 		<div>
-			<div className="section--center">
-				<p><b>Pandora Blog</b></p>
-				<p>As Pandora's brand evolved, the blog fell behind. Reiniscent of Web 1.0, the blog desperately needed a brand and experience&nbsp;refresh.</p>
-				<p>The blog is written by musicians about music for music lovers. Pandora has a rich library of beautiful dynamic media that was limited by the old blog's rigid narrow layout. We set strict visual criteria to unify and ensure the quality of each post, a standard that it previously&nbsp;lacked.</p>
-			</div>
-			<div className="section--full" id="blog--r">
-				<div className="flex" id="blog--r-1">
-					<img src={require("./images/blog/Blog-R2-A-blue.jpg")} />
-					<img src={require("./images/blog/Blog-R2-B-blue.jpg")} />
-				</div>
-				<div className="section--center" id="blog--r-text">
-					<p>From research to design to development, I led the project in collboration with the marketing team to re-invent the reader's experience. Ultimately we transitioned from a category based navigation, to a tag cloud based experience, where readers can explore content in a broader and simultaneously more specific&nbsp;way.</p>
-				</div>
-				<div className="flex" id="blog--r-2">
-					<img src={require("./images/blog/Blog-R2-C-blue.jpg")} />
-					<img src={require("./images/blog/Blog-R2-D-blue.jpg")} />				
-				</div>
-			</div>
-			<div className="section--full">
-				<div className="section--center">
-					<p>Mobile First Always</p>
-					<p>More than 60 percent of our audience is reading their mobile devices. Our analytics confirmed optimizing for mobile is crucial; conversations and decisions revolved through on a smaller screen, including multimedia content while maintaining the user&nbsp;experience.</p>
-				</div>
-				<div className="flex" id="blog--mbl">
-					<img src={require("./images/blog/mbl-blog-home.png")} />
-					<img src={require("./images/blog/mbl-blog-inart-in.png")} />
-					<img src={require("./images/blog/mbl-blog-inart.png")} />
-					<img src={require("./images/blog/mbl-blog-search.png")} />
-					<img src={require("./images/blog/mbl-blog-searchres.png")} />
-					<img src={require("./images/blog/mbl-blog-social.png")} />
-				</div>
-				<div className="section--center">
-					<p>After the redesign, the average session grew by 2 percent and drop-off rates decreased by 4 percent compared to the previous&nbsp;year.</p>
-				</div>
-			</div>
-			<div className="section--full" id="blog--screens">
-				<img src={require("./images/blog/blog-home.png")} />
-				<img src={require("./images/blog/blog-feed.png")} />
-				<img src={require("./images/blog/blog-in.png")} />
-			</div>
-			<div className="section--full" id="blog--outro">
-				<div className="section--center">
-					<p>Lessons Learned</p>
-					<p>As also the lead developer, I was the point person with Wordpress VIP during their rigorous code review to ensure security and performance. The Pandora Blog is built from the ground up beginning with Wordpress's barebones starter theme. I've used Wordpress in the past, but not like this; now we're pretty good&nbsp;pals.</p>
-					<p><a className="button inverted" href="http://blog.pandora.com" target="blank">See The Real Thing</a></p>
-				</div>
-			</div>
-			<div className="section--center">
-				<ul className="flex">
-					<li><Link className="button button--prev" to="/USC-Annenberg">Previous</Link></li>
-					<li><Link className="button button--next" to="/Pandora-Dashboard">Next Project</Link></li>
-				</ul>
-			</div>
+			<main>
+				<section className="section-default font-emphasis">
+					<p>Pandora Blog</p>
+				</section>
+				<section className="section-default font-primary">
+					<p>
+						<b>Background</b><br/>
+						The Pandora blog reflected the design trends when it was created in 2003 and hasn't been updated since. Engagement was modest and sharing was obscure and often mis-configured.
+					</p>
+					<p>
+						As lead designer and developer, I guided the social team to divise a new content strategy and organize past content for a better user experience. I created visual guidlines to unify and ensure the quality of each post, a standard that it previously lacked.
+					</p>
+					<p>
+						<b>Goal</b><br/>
+						<ul>
+							<li>Upgrade the platform for a better experience for rich media content</li>
+							<li>To increase engagement on the platform and social reposting</li>
+							<li>Optimize responsive web viewable on mobile</li>
+						</ul>
+					</p>
+				</section>
+				<section className="section-full">
+					<img className="maxWidth-900" src={require("./images/blog/1-wires.png")} alt="Pandora Blog - Wireframes" />
+				</section>
+				<section className="section-default font-primary">
+					<p>
+						<b>The Case for Responsive</b><br/>
+						<ul>
+							<li>60% of visits were on mobile devices in 2014 and growing year over year, currently 92% of visits in 2017.</li>
+							<li>The longest session durations were split between tablet and desktop depending on the referral source.</li>
+						</ul>
+					</p>
+					<p>
+						<b>Results</b><br/>
+						Compared to the previous year,
+						<ul>
+							<li>Average session duration grew 20%</li>
+							<li>Pages per session grew 5%</li>
+							<li>Drop off rates dropped by 4%</li>
+						</ul>
+					</p>
+				</section>
+				<section className="section-full margin-8rem">
+					<img className="maxWidth-1100" src={require("./images/blog/2-mbl.png")} alt="Pandora Blog - Mobile" />
+				</section>
+				<section className="section-full padding-8rem bg-grey">
+					<img className="maxWidth-900" src={require("./images/blog/3-blog.png")} alt="Pandora Blog - Desktop" />
+					<img className="maxWidth-900" src={require("./images/blog/4-blog.png")} alt="Pandora Blog - Desktop" />
+					<img className="maxWidth-900" src={require("./images/blog/5-blog.png")} alt="Pandora Blog - Desktop" />
+				</section>
+				<section className="section-default font-primary">
+					<p>
+						<b>Technical</b><br/>
+						The blog runs on Wordpress VIP and the prior theme was not optimized to feature rich media content. Starting with the underscores framework, a new theme was built from the ground up.
+					</p>
+					<p>
+						Social reposting was implemented with the latest SDKs and followed Facebook's recommended Open Graph best practices.
+					</p>
+					<p>
+						<a className="button button-inverted" href="http://blog.pandora.com" target="blank">See the real thing</a>
+					</p>
+				</section>
+				<section className="section-full bg-grey">
+					<section className="section-last section-nav">
+						<Link className="button" to="/USC-Annenberg">Previous</Link>
+						<Link className="button" to="/Pandora-Dashboard">Next Project</Link>
+					</section>
+				</section>
+			</main>
 		</div>
 	)
 }

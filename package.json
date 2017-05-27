@@ -26,8 +26,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "build-css": "node-sass src/stylesheets/sass/main.sass src/stylesheets/css/main.css",
-    "watch-css": "node-sass src/stylesheets/sass/main.sass src/stylesheets/css/main.css -w",
+    "build-css": "node-sass src/stylesheets/sass/* src/stylesheets/css/*",
+    "watch-css": "node-sass src/stylesheets/sass/* src/stylesheets/css/* -w",
     "deploy": "npm run build&&gh-pages -d build --branch master"
   }
 }
