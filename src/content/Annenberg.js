@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, } from 'react-router-dom';
 
 
-function Annenberg() {
+function Annenberg({i, goTo}) {
 	return (
 		<div>
 

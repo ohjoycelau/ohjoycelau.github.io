@@ -12,26 +12,39 @@ import Resume from './content/Resume';
 
 
 class App extends Component {
-	
-	navTo() {
-		console.log('this.props');
+
+	currentTo = (i, event) => {
+		document.getElementById('meter').style.left = "calc( 100% / 5 * " + i + ")";
 	}
 
+
 	render() {
+
+		const navLinks = ["/", "/USC-Annenberg", "/Pandora-Blog", "/Pandora-Dashboard", "/Whiteboard-Sessions"]
+
 		return (
 			<Router>
 				<div>	
 					<nav className="global-nav">
-						<NavLink onClick={this.navTo.bind(this)} activeClassName="active" exact to="/">Home</NavLink>
-						<NavLink onClick={this.navTo.bind(this)} activeClassName="active" to="/USC-Annenberg">Annenberg</NavLink>
-						<NavLink onClick={this.navTo.bind(this)} activeClassName="active" to="/Pandora-Blog">Blog</NavLink>
-						<NavLink onClick={this.navTo.bind(this)} activeClassName="active" to="/Pandora-Dashboard">Dashboard</NavLink>
-						<NavLink onClick={this.navTo.bind(this)} activeClassName="active" to="/Whiteboard-Sessions">Whiteboard</NavLink>
+
+						<div id="meter"></div>
+
+					    { navLinks.map((links, i) => {
+					    	return (
+					    		<NavLink 
+									exact to={links} 
+									id={i}
+									activeClassName="active"
+									onClick={(event) => this.currentTo(i, event)} >
+					    		i</NavLink>
+					    	)
+					    }) }
+
 					</nav>
 					<ScrollToTop>
 						<main>
 							<Route exact path="/" component={Home} />
-							<Route path="/USC-Annenberg" component={Annenberg} />
+							<Route path="/USC-Annenberg" render={props => <Annenberg goTo={this.currentTo} />} />
 							<Route path="/Pandora-Blog" component={Blog} />
 							<Route path="/Pandora-Dashboard" component={Eng} />
 							<Route path="/Whiteboard-Sessions" component={Whiteboard} />

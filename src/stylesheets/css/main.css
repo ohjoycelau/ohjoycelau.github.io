@@ -158,7 +158,7 @@ img {
 
 /* Page Specific */
 .global-nav {
-  z-index: 100;
+  z-index: 99;
   width: 100%;
   position: fixed;
   top: 0;
@@ -170,8 +170,16 @@ img {
     display: block;
     box-sizing: border-box;
     border-top: 0.25rem solid #353564; }
-    .global-nav a.active {
-      background-color: #353564; }
+
+#meter {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc( 100% / 5);
+  min-height: 0.75rem;
+  background-color: #353564;
+  transition: left 200ms; }
 
 .wbs {
   display: flex;
