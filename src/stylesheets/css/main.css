@@ -156,15 +156,29 @@ img {
 .bg-grey {
   background-color: rgba(0, 0, 0, 0.05); }
 
+.col-3 {
+  width: calc( 100% / 3);
+  min-width: calc( 100% / 3); }
+
+.col-5 {
+  width: calc( 100% / 5);
+  min-width: calc( 100% / 5); }
+
+.col-flex {
+  display: flex;
+  flex-direction: row; }
+
 /* Page Specific */
 .global-nav {
   z-index: 99;
   width: 100%;
   position: fixed;
   top: 0;
-  display: flex; }
+  display: flex;
+  flex-direction: row; }
   .global-nav a {
     width: calc( 100% / 5);
+    min-width: calc( 100% / 5);
     height: 0.75rem;
     font-size: 0;
     display: block;
@@ -177,11 +191,16 @@ img {
   top: 0;
   left: 0;
   width: calc( 100% / 5);
+  min-width: calc( 100% / 5);
   min-height: 0.75rem;
   background-color: #353564;
   transition: left 200ms; }
 
 .wbs {
+  background-image: url("./../../content/images/wbs/0-vert.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
   display: flex;
   flex-wrap: no-wrap;
   flex-direction: column;
@@ -203,6 +222,8 @@ img {
 
 @media screen and (min-width: 678px) {
   .wbs {
-    flex-direction: row; }
+    flex-direction: row;
+    background-image: url("./../../content/images/wbs/0-hor.png"); }
     .wbs .wbs-yt {
-      width: calc( 100% / 3); } }
+      width: calc( 100% / 3);
+      min-width: calc( 100% / 3); } }

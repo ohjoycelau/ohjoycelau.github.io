@@ -44,7 +44,7 @@ class App extends Component {
 					<ScrollToTop>
 						<main>
 							<Route exact path="/" component={Home} />
-							<Route path="/USC-Annenberg" render={props => <Annenberg goTo={this.currentTo} />} />
+							<Route path="/USC-Annenberg" component = {Annenberg} />
 							<Route path="/Pandora-Blog" component={Blog} />
 							<Route path="/Pandora-Dashboard" component={Eng} />
 							<Route path="/Whiteboard-Sessions" component={Whiteboard} />

@@ -1,28 +1,32 @@
 import React from 'react';
-import { BrowserRouter as Link, } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, } from 'react-router-dom';
 
 function Resume() {
 	return (
 		<div>
-			<div className="section--center">
-				<p><b><h1>Joyce Lau</h1></b>
-				<br/><a href="#">Linkedin</a> <a href="#">Instagram</a></p>
-				
-				<p>2016-present, Product Designer, <a href="http://pandora.com">Pandora</a>
-				<br/>2015, Web Designer / Developer, <a href="http://pandora.com">Pandora</a>
-				<br/>2014, Web Designer / Developer, <a href="http://annenberg.usc.edu">USC&nbsp;Annenberg</a>
-				<br/>2014, Visual Creative Intern, <a href="http://pandora.com">Pandora</a>
-				<br/>2013, Graphic Design Intern, <a href="http://blitzagency.com">BLITZ</a>
-				<br/>2013, Marketing Intern, <a href="http://aysymphony.org" target="blank">American&nbsp;Youth&nbsp;Symphony</a></p>			
-			</div>
-			<div className="section--full">
-				<img className="full" src={require("./images/alpaca.jpg")} alt="Alpaca good time into your weekend ;)" />
-			</div>
-			<div className="section--center">
-				<ul className="flex">
-					<li><Link className="button button--next" to="/">Back Home</Link></li>
-				</ul>
-			</div>
+			<section className="section-default font-emphasis">
+				<Link exact to="/">Joyce Lau</Link> <span className="font-primary">ux/ui designer</span>
+			</section>
+			<section className="section-default font-primary">
+				www / <b><a href="http://linkedin.com/in/ohjoycelau" target="blank">linkedin</a></b> / <b><a href="http://instagram.com/ohjoycelau" target="blank">instagram</a></b><br/>
+				email / <b><a href="mailto:ohjoycelau@gmail.com?subject=Ahoy!">ohjoycelau@gmail.com</a></b><br/>
+			</section>
+			<section className="section-default font-primary">
+				<p>July 2016 - present
+					<br/><b>Product designer</b>, Pandora Media</p>
+				<p>Feb 2015 - July 2016
+					<br/><b>Web designer/developer</b>, Pandora Media</p>
+				<p>Summer 2014
+					<br/><b>Visual design intern</b>, Pandora Media</p>
+				<p>Jan - Dec 2014
+					<br/><b>Web designer/developer</b>, USC Annenberg School for Communication and Journalism</p>
+				<p>June - Aug 2013
+					<br/><b>Marketing intern</b>, American Youth Symphony</p>
+			</section>
+			<section className="section-last section-nav">
+				<Link className="button" to="/">Back Home</Link>
+				<Link className="button" to="/USC-Annenberg">See Projects</Link>
+			</section>
 		</div>
 	)
 }

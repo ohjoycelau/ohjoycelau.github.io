@@ -3,9 +3,14 @@ import { BrowserRouter as Router, withRouter } from 'react-router-dom';
 
 class ScrollToTop extends Component {
 	getLocation = () => {
-		// console.log(document.querySelector('.active').id);
-		let i = document.querySelector('.active').id;
-		document.getElementById('meter').style.left = "calc( 100% / 5 * " + i + ")";
+		let i = document.querySelector('.active');
+		let meter = document.getElementById('meter');
+		if (i) {
+			i = i.id;
+			meter.style.left = "calc( 100% / 5 * " + i + ")";
+		} else {
+			meter.style.left = "calc( 100% / 5 * -1 )";
+		}
 	}
 	componentDidMount() {
 		this.getLocation();
