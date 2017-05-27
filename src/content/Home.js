@@ -9,7 +9,6 @@ function Home() {
 				<section className="section-default">
 					<p className="font-emphasis"><Link to="/Resume">Joyce Lau</Link> is a product designer, currently designing visual systems and wrangling sass at <a target="blank" href="https://pandora.com">Pandora</a> in <a target="blank" href="https://www.google.com/maps/placelists/list/1Txuf3VoxvgevYPY3ZfRVgmjlqcU">Oakland,&nbsp;California</a>.</p>
 					<p className="font-primary">I draw things on <a href="http://instagram.com/ohjoycelau" target="blank">Instagram</a>, but I'm also professional, so check out <a href="http://linkedin.com/in/ohjoycelau" target="blank">Linkedin</a>. <a href="mailto:ohjoycelau@gmail.com?subject=Ahoy!" target="blank">Drop a line</a> to see more examples of my work or to just chat.</p>
-					<p><Link className="button button-inverted" to="/USC-Annenberg">See Projects</Link></p>
 				</section>
 				<section className="section-default">
 					<p className="font-primary">Lately I've been up to,</p>
@@ -30,9 +29,11 @@ function Home() {
 						<h1 className="font-emphasis">Translating designs into <a target="blank" href="http://uschinaexchange.usc.edu/content/uscpeking-university-report-building-us-china-trust-be-released-april-22-2014">responsive web</a> at USC Annenberg Public Affairs.</h1>
 					</p>
 				</section>
-				<section className="section-last">
-					<Link to="/Resume" className="button space-right-s">Resume</Link>
-					<a className="button" href="mailto:ohjoycelau@gmail.com?subject=Ahoy!">Drop a line</a>
+				<section className="section-full">
+					<section className="section-last section-nav">
+						<Link className="button" to="/Resume">Resume</Link>
+						<Link className="button" to="/USC-Annenberg">See Projects</Link>
+					</section>
 				</section>
 			</main>
 		</div>

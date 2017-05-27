@@ -53,7 +53,7 @@ function Whiteboard() {
 				</section>
 				<section className="section-default font-primary">
 					<p>
-						Check out the rest of the talented whiteboard illustration team – Carolyn Jaeger, Shannon Ling, Jane Choi, Trent Thibodeaux, Jehan Khateeb.
+						I like to make and draw on other things too. Sometimes I take pictures.
 					</p>
 					<p>
 						<a className="button button-inverted" target="blank" href="http://instagram.com/ohjoycelau">See more on Instagram</a>

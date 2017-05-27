@@ -94,7 +94,7 @@ a {
     border-radius: 0.5rem; }
   .button-inverted:hover, .button-inverted:active {
     color: #353564;
-    background-color: white;
+    background-color: transparent;
     border: 2px solid #353564; }
 
 img {
