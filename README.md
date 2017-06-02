@@ -1,5 +1,6 @@
 # ohjoycelau.github.io
 
-== Description ==
+Description
+===========
 
 Visit http://joycelau.org, created using react.
