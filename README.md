@@ -2,4 +2,4 @@
 
 == Description ==
 
-Visit joycelau.org, created using react.
+Visit http://joycelau.org, created using react.
