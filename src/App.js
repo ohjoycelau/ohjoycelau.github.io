@@ -3,6 +3,10 @@ import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 import ScrollToTop from './ScrollToTop';
 
+// Google Analytics
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-42592562-2');
+
 // Content
 import Home from './content/Home';
 import Annenberg from './content/Annenberg';
@@ -18,6 +22,9 @@ class App extends Component {
 		document.getElementById('meter').style.left = "calc( 100% / 5 * " + i + ")";
 	}
 
+	logPageView = () => {
+		ReactGA.pageview(window.location.hash);
+	}
 
 	render() {
 
@@ -28,7 +35,7 @@ class App extends Component {
 				<Helmet>
 					<title>Joyce Lau - ux/ui designer</title>
 				</Helmet>
-				<Router>
+				<Router onUpdate={logPageView}>
 					<div>	
 						<nav className="global-nav">
 
