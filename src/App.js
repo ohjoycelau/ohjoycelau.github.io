@@ -35,7 +35,7 @@ class App extends Component {
 				<Helmet>
 					<title>Joyce Lau - ux/ui designer</title>
 				</Helmet>
-				<Router onUpdate={logPageView}>
+				<Router onUpdate={this.logPageView}>
 					<div>	
 						<nav className="global-nav">
 
