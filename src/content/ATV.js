@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, } from 'react-router-dom';
 
 
-function Annenberg() {
+function ATV() {
 	return (
 		<div>
 
 			<main>
 				<section className="section-default font-emphasis">
-					<p>USC Annenberg School for Communication and Journalism</p>
+					<p>Pandora on Android TV</p>
 				</section>
 				<section className="section-default font-primary">
 					<p>
@@ -29,10 +29,11 @@ function Annenberg() {
 						<ul>
 							<li>Students (prospectives, current)</li>
 							<li>Staff (faculty, administration, employees)</li>
-							<li>Parents (prospects, current, alumni)</li>
 							<li>Alumni</li>
+							<li>Parents</li>
 							<li>Donors</li>
 							<li>Industry</li>
+							<li>Parents (prospects, current, alumni)</li>
 						</ul>
 					</p>
 				</section>
@@ -63,8 +64,8 @@ function Annenberg() {
 				</section>
 				<section className="section-full bg-grey">
 					<section className="section-last section-nav">
-						<Link className="button" to="/">Back Home</Link>
-						<Link className="button" to="/Pandora-Blog">Next Project</Link>
+						<Link className="button" to="/Pandora-Dashboard">Previous</Link>
+						<Link className="button" to="/Whiteboard-Sessions">Next Project</Link>
 					</section>
 				</section>
 			</main>
@@ -72,4 +73,4 @@ function Annenberg() {
 	)
 }
 
-export default Annenberg;
+export default ATV;

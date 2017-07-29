@@ -10,8 +10,13 @@ $width-default: 68rem
 $width-wide: 90rem
 
 $color-midnightBlue: #353564
-
 $color-primary: $color-midnightBlue
+
+$nav-pages: 6
+
+@mixin col-nav
+	width: calc( 100% / #{$nav-pages} )
+	min-width: calc( 100% / #{$nav-pages} )
 
 
 @mixin link($link, $hover)
@@ -137,17 +142,12 @@ img
 @mixin col-3
 	width: calc( 100% / 3 )
 	min-width: calc( 100% / 3 )
-@mixin col-5
-	width: calc( 100% / 5 )
-	min-width: calc( 100% / 5 )
 @mixin col-flex
 	display: flex
 	flex-direction: row
 
 .col-3
 	@include col-3
-.col-5
-	@include col-5
 .col-flex
 	@include col-flex
 
@@ -160,7 +160,7 @@ img
 	top: 0
 	@include col-flex
 	a
-		@include col-5
+		@include col-nav
 		height: 0.75rem
 		font-size: 0
 		display: block
@@ -174,7 +174,7 @@ img
 	position: fixed
 	top: 0
 	left: 0
-	@include col-5
+	@include col-nav
 	min-height: 0.75rem
 	background-color: $color-primary
 	transition: left 200ms

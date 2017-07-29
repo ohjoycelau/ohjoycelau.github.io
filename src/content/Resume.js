@@ -17,9 +17,15 @@ function Resume() {
 				<p>Summer 2014
 					<br/><b>Visual design intern</b>, Pandora Media</p>
 				<p>Jan - Dec 2014
-					<br/><b>Web designer/developer</b>, USC Annenberg School for Communication and Journalism</p>
+					<br/><b>Web designer/developer</b>, USC Annenberg School for Communication and Journalism, Office of Public Affairs</p>
 				<p>June - Aug 2013
 					<br/><b>Marketing intern</b>, American Youth Symphony</p>
+			</section>
+			<section className="section-default font-primary">
+				<p>2010 - 2014
+					<br/><b>University of Southern California</b>
+					<br/>Roski School of Art and Design, B.A. Design and Drawing
+					<br/>Minors in Web Development and Marketing</p>
 			</section>
 			<section className="section-default">
 				<a className="button button-inverted" href="mailto:ohjoycelau@gmail.com?subject=Ahoy!">Drop a line</a>

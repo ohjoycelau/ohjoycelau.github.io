@@ -59,7 +59,7 @@ function Eng() {
 				<section className="section-full bg-grey">
 					<section className="section-last section-nav">
 						<Link className="button" to="/Pandora-Blog">Previous</Link>
-						<Link className="button" to="/Whiteboard-Sessions">Next Project</Link>
+						<Link className="button" to="/Pandora-ATV">Next Project</Link>
 					</section>
 				</section>
 			</main>

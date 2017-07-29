@@ -22,7 +22,7 @@ function Home() {
 					</p>
 					<p>
 						<h2 className="font-primary">Pandora</h2>
-						<h1 className="font-emphasis">Designing and developing Pandora <a target="blank" href="http://www.pandora.com/careers/">Careers</a>, <a target="blank" href="http://blog.pandora.com/">Blog</a> and internal tools.</h1>
+						<h1 className="font-emphasis">Designing and developing Pandora <a target="blank" href="http://www.pandora.com/careers/">Careers</a>, <a target="blank" href="http://blog.pandora.com/">Blog</a> and <Link to="/Pandora-Dashboard">internal tools</Link>.</h1>
 					</p>
 					<p>
 						<h2 className="font-primary">US-China Exchange</h2>
