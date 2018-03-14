@@ -29,7 +29,7 @@ class App extends Component {
 
 	render() {
 
-		const navLinks = ["/", "/USC-Annenberg", "/Pandora-Blog", "/Pandora-Dashboard", "/Pandora-ATV", "/Whiteboard-Sessions"]
+		const navLinks = ["/", "/USC-Annenberg", "/Pandora-Blog", "/Pandora-Dashboard", "/Pandora-10ft", "/Whiteboard-Sessions"]
 
 		return (
 			<div>
