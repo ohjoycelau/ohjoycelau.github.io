@@ -61,7 +61,7 @@ function Annenberg() {
 					</section>
 					<video className="maxWidth-900" autoPlay loop type="video/mp4" src={require("./images/annenberg/8-event.mp4")} ></video>
 				</section>
-				<section className="section-full bg-grey">
+				<section className="section-full bg-grey section-fixed">
 					<section className="section-last section-nav">
 						<Link className="button" to="/">Back Home</Link>
 						<Link className="button" to="/Pandora-Blog">Next Project</Link>

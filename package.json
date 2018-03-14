@@ -31,5 +31,16 @@
     "build-css": "node-sass src/stylesheets/sass/* src/stylesheets/css/*",
     "watch-css": "node-sass src/stylesheets/sass/* src/stylesheets/css/* -w",
     "deploy": "npm run build&&gh-pages -d build --branch master"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohjoycelau/ohjoycelau.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ohjoycelau/ohjoycelau.github.io/issues"
   }
 }
