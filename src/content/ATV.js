@@ -8,44 +8,64 @@ function ATV() {
 
 			<main>
 				<section className="section-default font-emphasis">
-					<p>Pandora on Android TV</p>
+					<p>Pandora on 10 foot</p>
 				</section>
 				<section className="section-default font-primary">
 					<p>
-						<b>Goal</b><br/>
-						Redesign and refresh Annenberg's online presence to reflect the school's greater strategy to become the leader in new media.
-					</p>
-					<p>
-						<b>Process</b><br/>
-						Using the lean canvas model, we clarified our audience, painpoints, and technical requirements to guide priorities and align design solutions.
-					</p>
-					<p>
-						<b>Problems</b><br/>
-						The site had grown as the school has grown, but the infrastructure technologically as well as information architecture had been neglected. Serving such a wide range of demographics who neede to sift through convoluted links.
-					</p>
-					<p>
-						<b>Audience</b><br/>
-						We identified and inverviewed six major distinct demographic groups:
+						<b>Who even watches TV anymore?</b><br/>
 						<ul>
-							<li>Students (prospectives, current)</li>
-							<li>Staff (faculty, administration, employees)</li>
-							<li>Alumni</li>
-							<li>Parents</li>
-							<li>Donors</li>
-							<li>Industry</li>
-							<li>Parents (prospects, current, alumni)</li>
+							<li>Around the US, Smart TV users grew over 30% in 2016 and is predicted to reach over 194M users by 2021.</li>
+							<li>In 2016, Pandora grew in Connected Home users year over year, but seen uniques falling month over month.</li>
+							<li>Since 2015, Pandora's content library and feature capabilites have grown.</li>
+						</ul>
+					</p>
+					<p>
+						<b>Demographic</b><br/>
+						<ul>
+							<li>Around 30-50% of users are exclusive to the TV Platform.</li>
+							<li>Roughly 50% are under 24 years of age.</li>
+							<li>User expectations change drastically depending on context.</li>
+						</ul>
+					</p>
+					<p>
+						<b>Why people were leaving</b><br/>
+						<ul>
+							<li>Perception of less content than competitors</li>
+							<li>Lack of feature parity (search and play, playlisting, skips and replays)</li>
+						</ul>
+					</p>
+					<p>
+						<b>In Research</b><br/>
+						Qualitative research combined feedback from Listener Support as well as high level survey around curated music.<br/>
+						<ul>
+							<li>75% of users found Pandora's existing Browse catalog helpful.</li>
+							<li>Competitors tended to forgo deeper layers of content.</li>
 						</ul>
 					</p>
 				</section>
-				<section className="section-full bg-grey padding-8rem">
-					<video className="maxWidth-900" loop autoPlay>
-						<source src={require("./images/annenberg/1-nav.mp4")} type="video/mp4" />
-					</video>
-					<br/>
-					<img className="maxWidth-900" src={require("./images/annenberg/2-nav.png")} />
-				</section>
 				<section className="section-full padding-8rem">
-					<img className="maxWidth-900" src={require("./images/annenberg/3-home.png")} />
+					<img className="maxWidth-900" src={require("./images/atv/0-remote.jpg")} />
+				</section>
+				<section className="section-default font-primary">
+					<p>
+						<b>Tackling Navigation</b><br/>
+						<ul>
+							<li>Perception of less content than competitors</li>
+							<li>Lack of feature parity (search and play, playlisting, skips and replays)</li>
+						</ul>
+					</p>
+					<p>
+						<b>In Research</b><br/>
+						Qualitative research combined feedback from Listener Support as well as high level survey around curated music.<br/>
+						<ul>
+							<li>75% of users found Pandora's existing Browse catalog helpful.</li>
+							<li>Competitors tended to forgo deeper layers of content.</li>
+						</ul>
+					</p>
+				</section>
+				
+				<section className="section-full padding-8rem">
+					<img className="" src={require("./images/atv/1-globalnav.jpg")} />
 					<img className="maxWidth-900" src={require("./images/annenberg/4-home.png")} />
 				</section>
 				<section className="section-full padding-8rem bg-grey">

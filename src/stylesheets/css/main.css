@@ -145,6 +145,10 @@ img {
 .padding-bottom-8rem {
   padding: 0 0 8rem; }
 
+.padmar-0 {
+  margin: 0;
+  padding: 0; }
+
 .maxWidth-900 {
   width: 90%;
   max-width: 90rem; }
