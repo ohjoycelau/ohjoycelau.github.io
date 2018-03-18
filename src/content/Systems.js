@@ -7,97 +7,51 @@ function Systems() {
 		<div>
 
 			<main>
-				<section className="section-default font-h1">
-					<p>Awkward Adolescence - A Design Team Story</p>
-				</section>
-				<section className="section-default font-body">
-					<p>
-						<b>Who even watches TV anymore?</b><br/>
-						<ul>
-							<li>Around the US, Smart TV users grew over 30% in 2016 and is predicted to reach over 194M users by 2021.</li>
-							<li>In 2016, Pandora grew in Connected Home users year over year, but seen uniques falling month over month.</li>
-							<li>Since 2015, Pandora's content library and feature capabilites have grown.</li>
-						</ul>
-					</p>
-					<p>
-						<b>Demographic</b><br/>
-						<ul>
-							<li>Around 30-50% of users are exclusive to the TV Platform.</li>
-							<li>Roughly 50% are under 24 years of age.</li>
-							<li>User expectations change drastically depending on context.</li>
-						</ul>
-					</p>
-					<p>
-						<b>Why people were leaving</b><br/>
-						<ul>
-							<li>Perception of less content than competitors</li>
-							<li>Lack of feature parity (search and play, playlisting, skips and replays)</li>
-						</ul>
-					</p>
-				</section>
 				<section className="section-default">
-					<img src={require("./images/atv/0-before.jpg")} />
-					<span className="font-caption">Pandora on TV circa 2015</span>
+					<p className="font-h1">Awkward Adolescence, A Design Team Story</p>
 				</section>
 				<section className="section-default font-body">
-					<p>
-						<b>The 10' Experience</b><br/> 
-						<ul>
-							<li>TV often located in a common area of a household</li>
-							<li>Multitasking mindset accompanying</li>
-							<li>Varied device quality and capabilities</li>
-							<li>Viewing from at least 10' distance</li>
-							<li>D-pad navigation, i.e. no cursor & no layered interactions</li>
-						</ul>
-					</p>
-					<p>
-						<b>In Research</b><br/>
-						Qualitative research combined feedback from Listener Support as well as high level survey around curated music.<br/>
-						<ul>
-							<li>75% of users found Pandora's existing Browse catalog helpful.</li>
-							<li>Competitors tended to forgo deeper layers of content.</li>
-						</ul>
-					</p>
-					<p>
-						Previously built as a fragmented service, we sought to build a single app with the best experience that degraded gracefully through varied platform capabilities and user circumstances.
-					</p>
-				</section>
-				<section className="section-full padding-8rem">
-					<img className="maxWidth-900" src={require("./images/atv/0-remote.jpg")} />
+					<p>Fifteen years in, the Pandora design team — in human terms — was quite the awkward teenager.</p>
+					<p>Pandora a scrappy start up and it became increasingly evident our design practices were not scaling. Wrapping up a redesign in 2016, it was clear there were major gaps in the design process. A product team retrospective provided insight into the pain points both engineers and designers were facing due to scale. Well intended suggestions were inevitably quick fixes to the real problem: the need for design system thinking.</p>
+					<p>Tasked by a Lead Designer, I lead the effort to transform the way Pandora’s design team approached problems both <b><i>in</i></b> our work and <b><i>how</i></b> we work.</p>
 				</section>
 				<section className="section-default font-body">
-					<p>
-						<b>Main Design Goals</b><br/>
-						<ul>
-							<li>Define clear patterns that pass accesibility instead of playing "spot the difference" with users.</li>
-							<li>Combat content perception by featuring Browse explicitly.</li>
-							<li></li>
-						</ul>
-					</p>
+					<p className="font-h2">How do we design design?</p>
+					<p><b>Early Insights</b><br/>
+					I began by diving deep into our current practices, conducting interviews with designers, engineers and pm’s about their process and expectations. Surveys and audits pointed to fragmented processes and as a result, fragmented designs.</p>
+					<p><b>Design Ovrehead</b><br/>
+					Final decisions were difficult to follow and duplicative work was being done. Design needed a scalable process so designers don’t spend time solving problems that have already been solved and address the meatier questions.</p>
+					<p><b>Inconsistency and slowed process</b><br/>
+					Out of date and conflicting specs caused engineering to spend extra time chasing down or constantly revisit a design. We were at risk of creating 7 different row styles that were very similar but ultimately inconsistent. (Yes, that did happen in a previous iteration of Pandora.) With a coherent system, iterating becomes easier as you don’t have to worry about maintaining those 7 different rows and focus more on experience.</p>
+					<p><b>Fragmented Leadership</b><br/>
+					A fragmented team from the outside also has a fragmented voice. When a team’s got your back, a designer is empowered to have greater ownership and accountability in their designs (when working with other teams.)</p>
+					<p><b>The user suffers</b><br/>
+					In the end, inconsistencies impact our users from increased cognitive load to sub-optimal experiences (performance).</p>
 				</section>
-				<section className="section-full padding-8rem">
-					<img className="" src={require("./images/atv/1-globalnav.jpg")} />
-					<img className="maxWidth-900" src={require("./images/annenberg/4-home.png")} />
+				<section className="section-default font-body">
+					<p className="font-h2">Laying the foundation</p>
+					<p>I partnered with design and engineering managers to coordinate laying a strong foundation for design systems as concurrent projects continued into production.</p>
+					<p>I also worked closely with the design project coordinators to integrate design systems into our new Jira workflow.</p>
+					<p><b>React and Design</b><br/>
+					As a personal project, I had been learning ReactJS on the side. In partnership, methodologies in React and design come together well to organize components as it does in a design language.</p>
+					<p>I found myself often facilitating these conversations between designers and engineers. Jargon was often misconstrued; establishing clarity on both sides paved the way for better collaboration.</p>
+					<p><b>Defining the Design Language</b><br/>
+					Starting with the foundation, I audited, defined and documented our base styles. As we defined progressively more complex patterns, each was built from preceding pattern. (We reexamined patterns when it proved necessary.)</p>
+					<p>Once all the core components were documented into a library and understood across teams, productivity improved significantly. Time originally spent clarifying hex codes and spacing is now reallocated to tackle concepts and refine experiences.</p>
+					<p><b>Creating a new workflow</b><br/>
+					Designers are now accountable to maintain a cohesive experience. They must be prepared to justify their design decisions – across teams and to the user. At the onset, it may seem to slow down the design process, but it also builds in thoughtfulness that turns backtracking overhead into iteration and evolution.</p>
+					<p>Borrowing concepts from engineering git flow, updates are accompanied by a change log that is included in the library master file as well as notifying the team. Decisions concerning the UI were now easily propagated through a single source of truth.</p>
 				</section>
-
-				<section className="section-full padding-8rem bg-grey">
-					<img className="maxWidth-1100" src={require("./images/annenberg/5-mobile.png")} />
-				</section>
-				<section className="section-full padding-8rem">
-					<img className="maxWidth-900" src={require("./images/annenberg/6-event.png")} />
-					<img className="maxWidth-900" src={require("./images/annenberg/7-event.png")} />
-					<section className="section-default font-body">
-						<p>
-							<b>Experimenting</b><br/>
-							Annenberg hosts countless events throughout the year, however discoverability was difficult and lists were overwhelming. Revamping the traditional 7-day calendar, utilizing flexible widths for days that have events versus days without can give more breathing room when available.
-						</p>
-					</section>
-					<video className="maxWidth-900" autoPlay loop type="video/mp4" src={require("./images/annenberg/8-event.mp4")} ></video>
+				<section className="section-default font-body">
+					<p className="font-h2">Continuing the work</p>
+					<p>As the Pandora’s design system was in progress congruently as the product moved on, we were doing design QA to our own work as they were being shipped. As with any large company, legacy code is inevitable so we took provision to clearly document deprecated patterns.</p>
+					<p>Technologies within the design community was also still in progress of being flushed out. At the start of the endeavor, Sketch Libraries had not yet been released. After exploring numerous technologies (Figma, Invision, Brand.ai, Lingo, UX Pin, etc.), we decided to stick with a Sketch using symbols in anticipation for Libraries. Our custom solution included some flimflam with symbolic linking on a shared network which works for now.</p>
+					<p>The design system processes has been successfully laid on the design team, we are still working on propagating it across all platforms. Working with the core web engineering team has been the proof of concept and now the challenge is scaling this even further across more teams.</p>
 				</section>
 				<section className="section-full bg-grey">
 					<section className="section-last section-nav">
-						<Link className="button" to="/Pandora-Dashboard">Previous</Link>
-						<Link className="button" to="/Whiteboard-Sessions">Next Project</Link>
+						<Link className="button" to="/Pandora-Blog">Previous</Link>
+						<Link className="button" to="/Pandora-ATV">Next</Link>
 					</section>
 				</section>
 			</main>

@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,500");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,500");
 html {
   font-size: 62.5%; }
 
@@ -51,7 +51,7 @@ a {
   padding: 0 2rem 0.1rem;
   height: 4rem;
   line-height: 4rem;
-  font-family: "Work Sans", "Open Sans", "Helvetica", "Arial", sans-serif;
+  font-family: "Open Sans", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 1.8rem;
   font-weight: 500;
   text-decoration: none; }
@@ -108,7 +108,7 @@ img {
   margin-bottom: 3.2rem; }
 
 .font-h1 {
-  font-family: "Work Sans", "Open Sans", "Helvetica", "Arial", sans-serif;
+  font-family: "Open Sans", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 3.2rem;
   line-height: 4.2rem; }
 
