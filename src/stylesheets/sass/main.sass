@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500')
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700')
 
-$font-primary: 'Open Sans', 'Helvetica', 'Arial', sans-serif
-$font-emphasis: 'Work Sans', 'Open Sans', 'Helvetica', 'Arial', sans-serif
+$font-body: 'Open Sans', 'Helvetica', 'Arial', sans-serif
+$font-h1: 'Work Sans', 'Open Sans', 'Helvetica', 'Arial', sans-serif
 $font-xl: 3.2rem
+$font-l: 2.4rem
 $font-m: 1.8rem
 $font-s: 1.5rem
 
@@ -56,7 +57,7 @@ html
 html, body
 	padding: 0
 	margin: 0
-	font-family: $font-primary
+	font-family: $font-body
 	font-weight: 400
 	color: $color-primary
 	-webkit-font-smoothing: antialiased
@@ -80,7 +81,7 @@ a
 	padding: 0 2rem 0.1rem
 	height: 4rem
 	line-height: 4rem
-	font-family: $font-emphasis
+	font-family: $font-h1
 	font-size: $font-m
 	font-weight: 500
 	text-decoration: none
@@ -95,16 +96,20 @@ img
 .space-bottom-m
 	margin-bottom: 3.2rem
 
-.font-emphasis
-	font-family: $font-emphasis
+.font-h1
+	font-family: $font-h1
 	font-size: $font-xl
 	line-height: 4.2rem
-.font-primary
-	font-family: $font-primary
+.font-h2
+	font-family: $font-body
+	font-size: $font-l
+	line-height: 3rem
+.font-body
+	font-family: $font-body
 	font-size: $font-m
 	line-height: 3rem
 .font-caption
-	font-family: $font-primary
+	font-family: $font-body
 	font-size: $font-s
 	text-align: right
 	line-height: 3rem

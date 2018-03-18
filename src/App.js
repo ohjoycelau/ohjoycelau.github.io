@@ -10,9 +10,9 @@ ReactGA.initialize('UA-42592562-2');
 // Content
 import Home from './content/Home';
 import Annenberg from './content/Annenberg';
-import Blog from './content/Blog';
+import Systems from './content/Systems';
 import Eng from './content/Eng';
-import ATV from './content/ATV.js';
+import ATV from './content/ATV';
 import Whiteboard from './content/Whiteboard';
 import Resume from './content/Resume';
 
@@ -29,7 +29,7 @@ class App extends Component {
 
 	render() {
 
-		const navLinks = ["/", "/USC-Annenberg", "/Pandora-Blog", "/Pandora-Dashboard", "/Pandora-10ft", "/Whiteboard-Sessions"]
+		const navLinks = ["/", "/Pandora-10ft", "/Pandora-Systems", "/Pandora-Dashboard", "/USC-Annenberg", "/Whiteboard-Sessions"]
 
 		return (
 			<div>
@@ -57,10 +57,10 @@ class App extends Component {
 						<ScrollToTop>
 							<main>
 								<Route exact path="/" component={Home} />
-								<Route path="/USC-Annenberg" component = {Annenberg} />
-								<Route path="/Pandora-Blog" component={Blog} />
-								<Route path="/Pandora-Dashboard" component={Eng} />
 								<Route path="/Pandora-10ft" component={ATV} />
+								<Route path="/Pandora-Systems" component={Systems} />
+								<Route path="/Pandora-Dashboard" component={Eng} />
+								<Route path="/USC-Annenberg" component = {Annenberg} />
 								<Route path="/Whiteboard-Sessions" component={Whiteboard} />
 								<Route path="/Resume" component={Resume} />
 							</main>

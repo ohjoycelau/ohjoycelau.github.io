@@ -5,10 +5,10 @@ function Whiteboard() {
 	return (
 		<div>
 			<main>
-				<section className="section-default font-emphasis">
+				<section className="section-default font-h1">
 					<p>Whiteboard Sessions</p>
 				</section>
-				<section className="section-default font-primary">
+				<section className="section-default font-body">
 					<p>
 						<b>Premise</b><br/>
 						Pandora invites artists to perform and record in our offices. The whiteboard illustrations serve as the backdrop as they perform.
@@ -51,7 +51,7 @@ function Whiteboard() {
 					<img src={require("./images/wbs/5-wbs.jpg")} alt="Whiteboard - Wild Child" className="padding-bottom-8rem" />
 					<img src={require("./images/wbs/6-wbs.jpg")} alt="Whiteboard - Moon Taxi" />
 				</section>
-				<section className="section-default font-primary">
+				<section className="section-default font-body">
 					<p>
 						I like to make and draw on other things too. Sometimes I take pictures.
 					</p>

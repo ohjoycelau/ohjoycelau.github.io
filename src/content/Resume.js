@@ -5,11 +5,11 @@ function Resume() {
 	return (
 		<div>
 			<section className="section-default">
-				<p className="font-emphasis"><Link exact to="/">Joyce Lau</Link> <span className="font-primary">ux/ui designer</span></p>
-				<p className="font-primary">www / <b><a href="http://linkedin.com/in/ohjoycelau" target="blank">linkedin</a></b> / <b><a href="http://instagram.com/ohjoycelau" target="blank">instagram</a></b>
+				<p className="font-h1"><Link exact to="/">Joyce Lau</Link> <span className="font-body">ux/ui designer</span></p>
+				<p className="font-body">www / <b><a href="http://linkedin.com/in/ohjoycelau" target="blank">linkedin</a></b> / <b><a href="http://instagram.com/ohjoycelau" target="blank">instagram</a></b>
 				<br/>email / <b><a href="mailto:ohjoycelau@gmail.com?subject=Ahoy!">ohjoycelau@gmail.com</a></b></p>
 			</section>
-			<section className="section-default font-primary">
+			<section className="section-default font-body">
 				<p>July 2016 - present
 					<br/><b>Product designer</b>, Pandora Media</p>
 				<p>Feb 2015 - July 2016
@@ -21,7 +21,7 @@ function Resume() {
 				<p>June - Aug 2013
 					<br/><b>Marketing intern</b>, American Youth Symphony</p>
 			</section>
-			<section className="section-default font-primary">
+			<section className="section-default font-body">
 				<p>2010 - 2014
 					<br/><b>University of Southern California</b>
 					<br/>Roski School of Art and Design, B.A. Design and Drawing

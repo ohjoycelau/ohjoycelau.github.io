@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, } from 'react-router-dom';
 
 
-function ATV() {
+function Systems() {
 	return (
 		<div>
 
 			<main>
 				<section className="section-default font-h1">
-					<p>Pandora on 10 foot</p>
+					<p>Awkward Adolescence - A Design Team Story</p>
 				</section>
 				<section className="section-default font-body">
 					<p>
@@ -105,4 +105,4 @@ function ATV() {
 	)
 }
 
-export default ATV;
+export default Systems;

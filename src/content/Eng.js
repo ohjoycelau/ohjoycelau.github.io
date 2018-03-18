@@ -5,10 +5,10 @@ function Eng() {
 	return (
 		<div>
 			<main>
-				<section className="section-default font-emphasis">
+				<section className="section-default font-h1">
 					<p>Product Engineering Dashboard</p>
 				</section>
-				<section className="section-default font-primary">
+				<section className="section-default font-body">
 					<p>
 						<b>Goals</b><br/>
 						Replace the server auto generated data display with a more usable interface. The resulting dashboard will display and alert important events for engineers on-call and shown on a large screen in the team area.
@@ -21,7 +21,7 @@ function Eng() {
 				<section className="section-full">
 					<img src={require("./images/dashboard/1-pre.jpg")} />
 				</section>
-				<section className="section-default font-primary">
+				<section className="section-default font-body">
 					<p>
 						<b>User Profile</b><br/>
 						<ul>

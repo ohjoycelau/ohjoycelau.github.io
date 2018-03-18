@@ -7,10 +7,10 @@ function Annenberg() {
 		<div>
 
 			<main>
-				<section className="section-default font-emphasis">
+				<section className="section-default font-h1">
 					<p>USC Annenberg School for Communication and Journalism</p>
 				</section>
-				<section className="section-default font-primary">
+				<section className="section-default font-body">
 					<p>
 						<b>Goal</b><br/>
 						Redesign and refresh Annenberg's online presence to reflect the school's greater strategy to become the leader in new media.
@@ -53,7 +53,7 @@ function Annenberg() {
 				<section className="section-full padding-8rem">
 					<img className="maxWidth-900" src={require("./images/annenberg/6-event.png")} />
 					<img className="maxWidth-900" src={require("./images/annenberg/7-event.png")} />
-					<section className="section-default font-primary">
+					<section className="section-default font-body">
 						<p>
 							<b>Experimenting</b><br/>
 							Annenberg hosts countless events throughout the year, however discoverability was difficult and lists were overwhelming. Revamping the traditional 7-day calendar, utilizing flexible widths for days that have events versus days without can give more breathing room when available.

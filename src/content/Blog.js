@@ -6,10 +6,10 @@ function Blog() {
 	return (
 		<div>
 			<main>
-				<section className="section-default font-emphasis">
+				<section className="section-default font-h1">
 					<p>Pandora Blog</p>
 				</section>
-				<section className="section-default font-primary">
+				<section className="section-default font-body">
 					<p>
 						<b>Background</b><br/>
 						The Pandora blog reflected the design trends when it was created in 2003 and hasn't been updated since. Engagement was modest and sharing was obscure and often mis-configured.
@@ -29,7 +29,7 @@ function Blog() {
 				<section className="section-full">
 					<img className="maxWidth-900" src={require("./images/blog/1-wires.png")} alt="Pandora Blog - Wireframes" />
 				</section>
-				<section className="section-default font-primary">
+				<section className="section-default font-body">
 					<p>
 						<b>The Case for Responsive</b><br/>
 						<ul>
@@ -55,7 +55,7 @@ function Blog() {
 					<img className="maxWidth-900" src={require("./images/blog/4-blog.png")} alt="Pandora Blog - Desktop" />
 					<img className="maxWidth-900" src={require("./images/blog/5-blog.png")} alt="Pandora Blog - Desktop" />
 				</section>
-				<section className="section-default font-primary">
+				<section className="section-default font-body">
 					<p>
 						<b>Technical</b><br/>
 						The blog runs on Wordpress VIP and the prior theme was not optimized to feature rich media content. Starting with the underscores framework, a new theme was built from the ground up.

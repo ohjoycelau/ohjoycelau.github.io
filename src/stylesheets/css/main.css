@@ -107,12 +107,17 @@ img {
 .space-bottom-m {
   margin-bottom: 3.2rem; }
 
-.font-emphasis {
+.font-h1 {
   font-family: "Work Sans", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 3.2rem;
   line-height: 4.2rem; }
 
-.font-primary {
+.font-h2 {
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  font-size: 2.4rem;
+  line-height: 3rem; }
+
+.font-body {
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 1.8rem;
   line-height: 3rem; }
