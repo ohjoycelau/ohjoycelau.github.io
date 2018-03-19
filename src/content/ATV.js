@@ -12,8 +12,8 @@ function ATV() {
 					<p className="font-h2">Time for television's digital renaissance</p>
 					<p className="font-body">
 						<ul>
+							<li>According to E-marketer, in 2017, Connected TV users grew by over 30.8% in the US</li>
 							<li>2017 was a significant year as Pandora jumped into the on-demand world</li>
-							<li>According to E-marketer, in 2017, Connected TV users grew by over 30.8%</li>
 						</ul>
 					</p>
 				</section>

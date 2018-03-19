@@ -60,7 +60,7 @@ class App extends Component {
 								<Route path="/Pandora-10ft" component={ATV} />
 								<Route path="/Pandora-Systems" component={Systems} />
 								<Route path="/Pandora-Dashboard" component={Eng} />
-								<Route path="/USC-Annenberg" component = {Annenberg} />
+								<Route path="/USC-Annenberg" component={Annenberg} />
 								<Route path="/Whiteboard-Sessions" component={Whiteboard} />
 								<Route path="/Resume" component={Resume} />
 							</main>
