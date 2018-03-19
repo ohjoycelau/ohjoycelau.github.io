@@ -182,9 +182,6 @@ img {
 .maxWidth {
   max-width: 100%; }
 
-.width-50 {
-  max-width: 50%; }
-
 .bg-grey {
   background-color: rgba(0, 0, 0, 0.05); }
 
@@ -224,6 +221,11 @@ img {
   background-color: #353564;
   transition: left 200ms; }
 
+/* ATV.js */
+.move {
+  width: 45%; }
+
+/* Whiteboard.js */
 .wbs {
   background-image: url("./../../content/images/wbs/0-vert.png");
   background-repeat: no-repeat;

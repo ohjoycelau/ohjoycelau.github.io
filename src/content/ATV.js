@@ -89,11 +89,35 @@ function ATV() {
 				<section className="section-default font-body">
 					<p><b>Movement through a flat space</b><br/>
 					Horizontal navigation is prevalent on the television; however as our multi-tasking users now faced a larger content library, I hypothesized reading laterally was not ideal for our users. I conducted tests with various x/y axis oriented catalogs.</p>
+				</section>
+				<section className="section-full col-flex">
+					<img className="move" src={require("./images/atv/2-moveA.gif")} />
+					<img className="move" src={require("./images/atv/2-moveB.gif")} />
+				</section>
+				<section className="section-default font-body">
 					<p>In the end, vertical navigation was easiest to read and understand. The familiar format made browsing though lists and understanding the organization logic much more intuitive.</p>
 				</section>
-				<section className="section-nav col-flex">
-					<img classnName="width-50" src={require("./images/atv/2-moveA.gif")} />
-					<img classnName="width-50" src={require("./images/atv/2-moveB.gif")} />
+				<section className="section-full">
+					<img src={require("./images/atv/2-grids.png")} />
+				</section>
+				<section className="section-default">
+					[final images]
+				</section>
+				<section className="section-full bg-grey">
+					<section className="section-default font-body">
+						<p><b>Launched to Android TV</b>
+							<ul>
+								<li>Redesigns started in the fall of 2016 and launched by March 2017</li>
+								<li>In the past year of the app being live, year over year growth has increased by 30%</li>
+								<li>Sessions have increased by over 20%</li>
+								<li>Listener support has received 37% fewer device feature parity requests</li>
+							</ul>
+						</p>
+					</section>
+				</section>
+				<section className="section-default font-body">
+					<p className="font-h2">A Continuing Journey</p>
+					<p>As it often is, scope was highly influenced by the speed to market factor. There were many aspects of navigation and feature parity that were de-scoped from this initial release. We continue to test and explore concepts that were backlogged as well as pursue new ideas for a more connected Pandora experience.</p>
 				</section>
 
 
