@@ -125,7 +125,7 @@ img {
 
 .font-caption {
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: right;
   line-height: 3rem;
   display: block; }
@@ -149,6 +149,11 @@ img {
   display: flex;
   justify-content: space-between; }
 
+.section-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .margin-8rem {
   margin: 8rem auto; }
 
@@ -162,6 +167,10 @@ img {
   margin: 0;
   padding: 0; }
 
+.maxWidth-500 {
+  width: 90%;
+  max-width: 50rem; }
+
 .maxWidth-900 {
   width: 90%;
   max-width: 90rem; }
@@ -169,6 +178,12 @@ img {
 .maxWidth-1100 {
   width: 90%;
   max-width: 110rem; }
+
+.maxWidth {
+  max-width: 100%; }
+
+.width-50 {
+  max-width: 50%; }
 
 .bg-grey {
   background-color: rgba(0, 0, 0, 0.05); }
