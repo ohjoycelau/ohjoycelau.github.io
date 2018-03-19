@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Route, Link, } from 'react-router-dom';
 function Systems() {
 	return (
 		<div>
-
 			<main>
 				<section className="section-default">
 					<p className="font-h1">Blossoming Adolescence — A Design Team Story</p>
@@ -69,8 +68,8 @@ function Systems() {
 				</section>
 				<section className="section-full bg-grey">
 					<section className="section-last section-nav">
-						<Link className="button" to="/Pandora-Blog">Previous</Link>
-						<Link className="button" to="/Pandora-ATV">Next</Link>
+						<Link className="button" to="/Pandora-10ft">Previous</Link>
+						<Link className="button" to="/Pandora-Dashboard">Next Project</Link>
 					</section>
 				</section>
 			</main>

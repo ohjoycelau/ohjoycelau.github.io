@@ -61,7 +61,7 @@ function Whiteboard() {
 				</section>
 				<section className="section-full bg-grey">
 					<section className="section-last section-nav">
-						<Link className="button" to="/Pandora-ATV">Previous Project</Link>
+						<Link className="button" to="/Whiteboard-Sessions">Previous Project</Link>
 						<Link className="button" to="/">Back Home</Link>
 					</section>
 				</section>
