@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'; 
 import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 import ScrollToTop from './ScrollToTop';
@@ -9,16 +9,17 @@ ReactGA.initialize('UA-42592562-2');
 
 // Content
 import Home from './content/Home';
-import Annenberg from './content/Annenberg';
+import ATV from './content/ATV';
 import Systems from './content/Systems';
 import Eng from './content/Eng';
-import ATV from './content/ATV';
+import Annenberg from './content/Annenberg';
 import Whiteboard from './content/Whiteboard';
 import Resume from './content/Resume';
 
 
 class App extends Component {
 
+/*eslint-disable no-undef*/
 	currentTo = (i, event) => {
 		document.getElementById('meter').style.left = "calc( 100% / 6 * " + i + ")";
 	}
@@ -26,6 +27,7 @@ class App extends Component {
 	logPageView = () => {
 		ReactGA.pageview(window.location.hash);
 	}
+/*eslint-enable no-undef*/
 
 	render() {
 
@@ -60,7 +62,7 @@ class App extends Component {
 								<Route path="/Pandora-10ft" component={ATV} />
 								<Route path="/Pandora-Systems" component={Systems} />
 								<Route path="/Pandora-Dashboard" component={Eng} />
-								<Route path="/USC-Annenberg" component = {Annenberg} />
+								<Route path="/USC-Annenberg" component={Annenberg} />
 								<Route path="/Whiteboard-Sessions" component={Whiteboard} />
 								<Route path="/Resume" component={Resume} />
 							</main>

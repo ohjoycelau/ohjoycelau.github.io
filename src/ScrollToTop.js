@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, withRouter } from 'react-router-dom';
 
+/*eslint-disable no-undef*/
 class ScrollToTop extends Component {
 	getLocation = () => {
 		let i = document.querySelector('.active');
@@ -28,3 +29,4 @@ class ScrollToTop extends Component {
 }
 
 export default withRouter(ScrollToTop);
+/*eslint-disable no-undef*/
