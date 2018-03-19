@@ -69,15 +69,12 @@ function ATV() {
 					<p>By nature of the tv, users are tied to a remote, and moving quickly between at home tasks did not give much time to find the remote.</p>
 				</section>
 				<section className="section-default font-body">
-					<p clasname="font-h2">Our Approach</p>
+					<p className="font-h2">Our Approach</p>
 					<p><b>Designing for accessibility</b></p>
 					<img src={require("./images/atv/0-before.jpg")} />
 					<span className="font-caption">Pandora on TV circa 2014</span>
 					<p>Because Pandora was often paired with other activities around the house, designing for the temporarily incapacitated or distracted user was important. By fulfilling accessibility requirements, it also improves the experience of the multitasking mindset.</p>
 					<p>I began with defining a clear system in our top navigation. When a user returns briefly to interact with the tv, clearly identifying their current location takes ‘spot the difference’ out of the experience. Picking up the remote no longer became a guessing game.</p>
-				</section>
-				<section className="section-default">
-					<img src={require("./images/atv/1-options.png")} />
 				</section>
 				<section className="section-default font-body">
 					<p><b>A Global Fixed Navigation</b><br/>
@@ -91,17 +88,14 @@ function ATV() {
 					Horizontal navigation is prevalent on the television; however as our multi-tasking users now faced a larger content library, I hypothesized reading laterally was not ideal for our users. I conducted tests with various x/y axis oriented catalogs.</p>
 				</section>
 				<section className="section-full col-flex">
-					<img className="move" src={require("./images/atv/2-moveA.gif")} />
-					<img className="move" src={require("./images/atv/2-moveB.gif")} />
-				</section>
-				<section className="section-default font-body">
-					<p>In the end, vertical navigation was easiest to read and understand. The familiar format made browsing though lists and understanding the organization logic much more intuitive.</p>
+					<img className="atv-move" src={require("./images/atv/2-moveA.gif")} />
+					<img className="atv-move" src={require("./images/atv/2-moveB.gif")} />
 				</section>
 				<section className="section-full">
 					<img src={require("./images/atv/2-grids.png")} />
 				</section>
-				<section className="section-default">
-					[final images]
+				<section className="section-default font-body">
+					<p>In the end, vertical navigation was easiest to read and understand. The familiar format made browsing though lists and understanding the organization logic much more intuitive.</p>
 				</section>
 				<section className="section-full bg-grey">
 					<section className="section-default font-body">
@@ -114,7 +108,15 @@ function ATV() {
 							</ul>
 						</p>
 					</section>
+					<section className="section-full">
+						<img className="maxWidth-900 padding-bottom-8rem" src={require("./images/atv/3-np.png")} />
+						<div className="maxWidth-900 padding-bottom-8rem atv-browse">
+							<img className="frame" src={require("./images/atv/3-frame.png")} />
+							<video className="mov" autoPlay loop type="video/mp4" src={require("./images/atv/3-browse.mp4")} ></video>
+						</div>
+					</section>
 				</section>
+
 				<section className="section-default font-body">
 					<p className="font-h2">A Continuing Journey</p>
 					<p>As it often is, scope was highly influenced by the speed to market factor. There were many aspects of navigation and feature parity that were de-scoped from this initial release. We continue to test and explore concepts that were backlogged as well as pursue new ideas for a more connected Pandora experience.</p>

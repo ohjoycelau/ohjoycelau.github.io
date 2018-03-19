@@ -206,8 +206,26 @@ img
 	transition: left 200ms
 
 /* ATV.js */
-.move
-	width: 45%
+.atv
+	&-move
+		width: 44.5%
+	&-browse
+		position: relative
+		.frame
+			z-index: 1
+			position: relative
+		.mov
+			z-index: -1
+			position: absolute
+			top: 1%
+			left: 0
+			right: 0
+			margin-left: auto
+			margin-right: auto
+			width: 84.5%
+			box-sizing: content-box
+			border: 0.2rem solid black
+
 
 
 /* Whiteboard.js */
@@ -222,7 +240,7 @@ img
 	justify-content: center
 	align-items: center
 	width: 100%
-	.wbs-yt
+	&-yt
 		position: relative
 		width: 100%
 		&:after
@@ -239,6 +257,6 @@ img
 	.wbs
 		flex-direction: row
 		background-image: url('./../../content/images/wbs/0-hor.png');
-		.wbs-yt
+		&-yt
 			@include col-3
 
