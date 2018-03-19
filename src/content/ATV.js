@@ -8,8 +8,8 @@ function ATV() {
 
 			<main>
 				<section className="section-default">
-					<p className="font-h1">Pandora on 10 foot</p>
-					<p className="font-h2">It's television's turn to have a digitial renaissance</p>
+					<p className="font-h1">Who even watches tv anymore?</p>
+					<p className="font-h2">Time for television's digital renaissance</p>
 					<p className="font-body">
 						<ul>
 							<li>According to E-marketer, in 2017, Connected TV users grew by over 30.8% in the US</li>
@@ -125,8 +125,8 @@ function ATV() {
 
 				<section className="section-full bg-grey">
 					<section className="section-last section-nav">
-						<Link className="button" to="/Pandora-Dashboard">Previous</Link>
-						<Link className="button" to="/Whiteboard-Sessions">Next Project</Link>
+						<Link className="button" to="/">Back Home</Link>
+						<Link className="button" to="/Pandora-Systems">Next Project</Link>
 					</section>
 				</section>
 			</main>

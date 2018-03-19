@@ -5,10 +5,10 @@ import { BrowserRouter as Router, Route, Link, } from 'react-router-dom';
 function Systems() {
 	return (
 		<div>
-
 			<main>
 				<section className="section-default">
 					<p className="font-h1">Blossoming Adolescence — A Design Team Story</p>
+					<p className="font-caption">Due to confidentiality agreements, images have been excluded."</p>
 					<p className="font-body">Fifteen years into the history of Pandora, the design team, in human terms, was quite the awkward teenager.</p>
 				</section>
 				<section className="section-default font-body">
@@ -69,8 +69,8 @@ function Systems() {
 				</section>
 				<section className="section-full bg-grey">
 					<section className="section-last section-nav">
-						<Link className="button" to="/Pandora-Blog">Previous</Link>
-						<Link className="button" to="/Pandora-ATV">Next</Link>
+						<Link className="button" to="/Pandora-10ft">Previous</Link>
+						<Link className="button" to="/Pandora-Dashboard">Next Project</Link>
 					</section>
 				</section>
 			</main>
