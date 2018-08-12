@@ -33,7 +33,7 @@ function Resume() {
 			<section className="section-full bg-grey">
 				<section className="section-last section-nav">
 					<Link className="button" to="/">Back Home</Link>
-					<Link className="button" to="/USC-Annenberg">See Projects</Link>
+					<Link className="button" to="/Pandora-10ft">See Projects</Link>
 				</section>
 			</section>
 		</div>
