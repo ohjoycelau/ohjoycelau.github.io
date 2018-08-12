@@ -31,7 +31,7 @@
     "eject": "react-scripts eject",
     "build-css": "node-sass src/stylesheets/sass/* src/stylesheets/css/*",
     "watch-css": "node-sass src/stylesheets/sass/* src/stylesheets/css/* -w",
-    "deploy": "npm run build&&gh-pages -d build --branch master"
+    "deploy": "npm run build && gh-pages -d build --branch master && node deploy-ftp"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
   "main": "index.js",
