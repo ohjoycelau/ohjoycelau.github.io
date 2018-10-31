@@ -2,7 +2,7 @@ var FtpDeploy = require('ftp-deploy');
 var ftpDeploy = new FtpDeploy();
 
 var config = {
-    user: "joycelau",                   // NOTE that this was username in 1.x 
+    user: "joycelau",                   // NOTE that this was username in 1.x
     // password: "password",            // optional, prompted if none given
     host: "joycelau.org",
     port: 21,
