@@ -13,12 +13,12 @@ function Systems() {
 				<section className="section-default font-body">
 					<p className="font-h2">Growing pains</p>
 					<p>No longer a scrappy start-up, it became increasingly evident our design practices were not scaling. Wrapping up a redesign in 2016, it was clear there were major gaps in the design process. A product team retrospective provided insight into the pain points both engineers and designers were facing due to scale. Well intended suggestions were inevitably quick fixes to the real problem: the need for design system thinking.</p>
-					<p>Tasked by a Lead Designer, I lead the effort to transform the way Pandora’s design team approached problems both <b><i>in</i></b> our work and <b><i>how</i></b> we work.</p>
+					<p>With the support of design leadership, I lead the effort to transform the way Pandora’s design team approached problems both <b><i>in</i></b> our work and <b><i>how</i></b> we work.</p>
 				</section>
 				<section className="section-default font-body">
 					<p className="font-h1">How do we design design?</p>
 					<p>As with any design problem: understand, define, ideate, prototype, test.</p>
-					
+
 					<p className="font-h2">Early Insights</p>
 					<p>I began by diving deep into our current practices, conducting interviews with designers, engineers and pm’s on their workflows and expectations. Surveys and audits pointed to fragmented processes and as a result, fragmented designs, fragmented teams.</p>
 					<p><b>Design overhead and slowed process</b><br/>

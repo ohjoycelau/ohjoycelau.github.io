@@ -10,7 +10,9 @@ function Resume() {
 				<br/>email / <b><a href="mailto:ohjoycelau@gmail.com?subject=Ahoy!">ohjoycelau@gmail.com</a></b></p>
 			</section>
 			<section className="section-default font-body">
-				<p>July 2016 - present
+				<p>Sept 2018 - present</p>
+					<br/><b>Product Designer</b>, GitHub</p>
+				<p>July 2016 - Aug 2018
 					<br/><b>Product designer</b>, Pandora Media</p>
 				<p>Feb 2015 - July 2016
 					<br/><b>Web designer/developer</b>, Pandora Media</p>
