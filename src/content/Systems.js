@@ -26,7 +26,7 @@ function Systems() {
 					<p><b>Inconsistencies</b><br/>
 					We were at risk of creating 7 different row styles that were very similar but ultimately inconsistent. (Yes, that did happen in a previous iteration of Pandora.) In a coherent system, iterating becomes easier as you no longer worry about maintaining those 7 different rows.</p>
 					<p><b>Design Leadership</b><br/>
-					In a fragmented team, voices are diluted. When a team’s got your back, a designer is empowered to have greater ownership and accountability in their designs.</p>
+					In a fragmented team, voices are diluted. When a team’s got your back, a designer is empowered to have greater ownership and accountability in what they do.</p>
 					<p><b>The user suffers</b><br/>
 					In the end, inconsistencies impact our users from increased cognitive load to sub-optimal execution.</p>
 				</section>
