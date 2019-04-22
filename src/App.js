@@ -1,8 +1,7 @@
 import React, { Component } from 'react'; 
 import { Helmet } from "react-helmet";
-import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
+import { HashRouter, Router, Route, NavLink } from 'react-router-dom';
 import ScrollToTop from './ScrollToTop';
-import { createHashHistory } from 'history';
 
 // Google Analytics
 import ReactGA from 'react-ga';
@@ -19,12 +18,6 @@ import Resume from './content/Resume';
 
 
 class App extends Component {
-
-	history = createHashHistory({
-		basename: "",
-		hashType: "slash",
-		getUserConfirmation: (message, callback) => callback(window.confirm(message)),
-	});
 
 /*eslint-disable no-undef*/
 	currentTo = (i, event) => {
@@ -45,7 +38,7 @@ class App extends Component {
 				<Helmet>
 					<title>Joyce Lau - ux/ui designer</title>
 				</Helmet>
-				<Router history={this.history} onUpdate={this.logPageView}>
+				<HashRouter onUpdate={this.logPageView}>
 					<div>	
 						<nav className="global-nav">
 
@@ -75,7 +68,7 @@ class App extends Component {
 							</main>
 						</ScrollToTop>
 					</div>
-				</Router>
+				</HashRouter>
 			</div>
 		);
 	}
