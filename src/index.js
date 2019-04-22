@@ -6,6 +6,6 @@ import App from './App';
 require('./stylesheets/css/main.css');
 
 ReactDOM.render(
-  <App />,
+  	<App />,
   document.getElementById('root')
 );
