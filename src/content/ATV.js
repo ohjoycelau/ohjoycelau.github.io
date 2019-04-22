@@ -126,7 +126,7 @@ function ATV() {
 				<section className="section-full bg-grey">
 					<section className="section-last section-nav">
 						<Link className="button" to="/">Back Home</Link>
-						<Link className="button" to="/Pandora-Systems">Next Project</Link>
+						<Link className="button button-inverted" to="/Pandora-Systems">Next Project</Link>
 					</section>
 				</section>
 			</main>

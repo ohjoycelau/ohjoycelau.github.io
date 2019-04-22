@@ -56,13 +56,13 @@ function Whiteboard() {
 						I like to make and draw on other things too. Sometimes I take pictures.
 					</p>
 					<p>
-						<a className="button button-inverted" target="blank" href="http://instagram.com/ohjoycelau">See more on Instagram</a>
+						<a className="button" target="blank" href="http://instagram.com/ohjoycelau">See more on Instagram</a>
 					</p>
 				</section>
 				<section className="section-full bg-grey">
 					<section className="section-last section-nav">
 						<Link className="button" to="/USC-Annenberg">Previous Project</Link>
-						<Link className="button" to="/">Back Home</Link>
+						<Link className="button button-inverted" to="/">Back Home</Link>
 					</section>
 				</section>
 			</main>

@@ -70,7 +70,7 @@ function Blog() {
 				<section className="section-full bg-grey">
 					<section className="section-last section-nav">
 						<Link className="button" to="/USC-Annenberg">Previous</Link>
-						<Link className="button" to="/Pandora-Dashboard">Next Project</Link>
+						<Link className="button button-inverted" to="/Pandora-Dashboard">Next Project</Link>
 					</section>
 				</section>
 			</main>

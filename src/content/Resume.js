@@ -11,13 +11,13 @@ function Resume() {
 			</section>
 			<section className="section-default font-body">
 				<p>Sept 2018 - present
-					<br/><b>Product Designer</b>, GitHub</p>
+					<br/><b>Product designer</b>, GitHub</p>
 				<p>July 2016 - Aug 2018
-					<br/><b>Product designer</b>, Pandora Media</p>
+					<br/><b>Product designer</b>, Pandora</p>
 				<p>Feb 2015 - July 2016
-					<br/><b>Web designer/developer</b>, Pandora Media</p>
+					<br/><b>Web designer/developer</b>, Pandora</p>
 				<p>Summer 2014
-					<br/><b>Visual design intern</b>, Pandora Media</p>
+					<br/><b>Visual design intern</b>, Pandora</p>
 				<p>Jan - Dec 2014
 					<br/><b>Web designer/developer</b>, USC Annenberg School for Communication and Journalism, Office of Public Affairs</p>
 				<p>June - Aug 2013
@@ -30,12 +30,12 @@ function Resume() {
 					<br/>Minors in Web Development and Marketing</p>
 			</section>
 			<section className="section-default">
-				<a className="button button-inverted" href="mailto:ohjoycelau@gmail.com?subject=Ahoy!">Drop a line</a>
+				<a className="button" href="mailto:ohjoycelau@gmail.com?subject=Ahoy!">Drop a line</a>
 			</section>
 			<section className="section-full bg-grey">
 				<section className="section-last section-nav">
 					<Link className="button" to="/">Back Home</Link>
-					<Link className="button" to="/Pandora-10ft">See Projects</Link>
+					<Link className="button button-inverted" to="/Pandora-10ft">See Projects</Link>
 				</section>
 			</section>
 		</div>

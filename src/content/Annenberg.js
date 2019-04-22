@@ -64,7 +64,7 @@ function Annenberg() {
 				<section className="section-full bg-grey section-fixed">
 					<section className="section-last section-nav">
 						<Link className="button" to="/Pandora-Dashboard">Previous</Link>
-						<Link className="button" to="/Whiteboard-Sessions">Next Project</Link>
+						<Link className="button button-inverted" to="/Whiteboard-Sessions">Next Project</Link>
 					</section>
 				</section>
 			</main>
