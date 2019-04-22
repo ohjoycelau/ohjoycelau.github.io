@@ -1,6 +1,6 @@
 import React, { Component } from 'react'; 
 import { Helmet } from "react-helmet";
-import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
+import { HashRouter, Router, Route, NavLink } from 'react-router-dom';
 import ScrollToTop from './ScrollToTop';
 
 // Google Analytics
@@ -38,7 +38,7 @@ class App extends Component {
 				<Helmet>
 					<title>Joyce Lau - ux/ui designer</title>
 				</Helmet>
-				<Router onUpdate={this.logPageView}>
+				<HashRouter onUpdate={this.logPageView}>
 					<div>	
 						<nav className="global-nav">
 
@@ -68,7 +68,7 @@ class App extends Component {
 							</main>
 						</ScrollToTop>
 					</div>
-				</Router>
+				</HashRouter>
 			</div>
 		);
 	}
