@@ -8,7 +8,7 @@ function NewTV() {
 
 			<main>
 				<section className="section-default">
-					<p className="font-h1"><strike>Smallest</strike> Seamless...est...</p>
+					<p className="font-h1"><strike>Smallest</strike> Seamless</p>
 					<p className="font-body">From Iron Man to Wreck it Ralph, although portability and compactness are cool technological feats, the magic when something just works smartly is really where you go oooh~</p>
 				</section>
 				<section className="section-default section-center">

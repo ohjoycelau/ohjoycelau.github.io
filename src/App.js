@@ -67,8 +67,6 @@ class App extends Component {
 								<Route path="/USC-Annenberg" component={Annenberg} />
 								<Route path="/Whiteboard-Sessions" component={Whiteboard} />
 								<Route path="/Resume" component={Resume} />
-
-								<div className="jump">test</div>
 							</main>
 						</ScrollToTop>
 					</div>
