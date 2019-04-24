@@ -30,9 +30,6 @@ function ATV() {
 					<p><b>Technologies and Documentation</b><br/>
 					With the momentum from the Design Systems team that I lead, the new tv experience was built on a cohesive design language. We built the experience to be platform agnostic to ensure a unified experience in a forward thinking connected home.</p>
 				</section>
-				<section className="section-default section-center">
-					<video className="maxWidth" autoPlay loop type="video/mp4" src={require("./images/atv/0-home.mp4")} ></video>
-				</section>
 				<section className="section-default font-body">
 					<p className="font-h2">Changing Expectations</p>
 					<p>While Connected Home users were growing year over year, month to month uniques were dropping. We identified the perception of limited content and lack of feature parity between devices were driving users to competitors.</p>
@@ -126,7 +123,7 @@ function ATV() {
 				<section className="section-full bg-grey">
 					<section className="section-last section-nav">
 						<Link className="button" to="/">Back Home</Link>
-						<Link className="button button-inverted" to="/Pandora-Systems">Next Project</Link>
+						<Link className="button button-inverted" to="/Pandora-New-10ft">Next Project</Link>
 					</section>
 				</section>
 			</main>

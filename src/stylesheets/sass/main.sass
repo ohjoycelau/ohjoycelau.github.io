@@ -15,7 +15,7 @@ $width-wide: 90rem
 $color-midnightBlue: #353564
 $color-primary: $color-midnightBlue
 
-$nav-pages: 6
+$nav-pages: 7
 
 @mixin col-nav
 	width: calc( 100% / #{$nav-pages} )
@@ -100,11 +100,11 @@ img
 .font-h1
 	font-family: $font-heading
 	font-size: $font-xl
-	line-height: 4.2rem
+	line-height: 4.3rem
 .font-h2
 	font-family: $font-body
 	font-size: $font-l
-	line-height: 3rem
+	line-height: 3.4rem
 .font-body
 	font-family: $font-body
 	font-size: $font-m
@@ -260,3 +260,11 @@ img
 		&-yt
 			@include col-3
 
+
+.jump
+	display: block
+	position: fixed
+	bottom: 0
+	right: 0
+	width: 100px
+	height: 100px

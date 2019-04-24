@@ -8,9 +8,9 @@ class ScrollToTop extends Component {
 		let meter = document.getElementById('meter');
 		if (i) {
 			i = i.id;
-			meter.style.left = "calc( 100% / 6 * " + i + ")";
+			meter.style.left = "calc( 100% / 7 * " + i + ")";
 		} else {
-			meter.style.left = "calc( 100% / 6 * -1 )";
+			meter.style.left = "calc( 100% / 7 * -1 )";
 		}
 	}
 	componentDidMount() {

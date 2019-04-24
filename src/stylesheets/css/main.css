@@ -111,12 +111,12 @@ img {
 .font-h1 {
   font-family: "Work Sans", "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 3.2rem;
-  line-height: 4.2rem; }
+  line-height: 4.3rem; }
 
 .font-h2 {
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   font-size: 2.4rem;
-  line-height: 3rem; }
+  line-height: 3.4rem; }
 
 .font-body {
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
@@ -201,8 +201,8 @@ img {
   display: flex;
   flex-direction: row; }
   .global-nav a {
-    width: calc( 100% / 6);
-    min-width: calc( 100% / 6);
+    width: calc( 100% / 7);
+    min-width: calc( 100% / 7);
     height: 0.75rem;
     font-size: 0;
     display: block;
@@ -214,8 +214,8 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  width: calc( 100% / 6);
-  min-width: calc( 100% / 6);
+  width: calc( 100% / 7);
+  min-width: calc( 100% / 7);
   min-height: 0.75rem;
   background-color: #353564;
   transition: left 200ms; }
@@ -273,3 +273,11 @@ img {
     .wbs-yt {
       width: calc( 100% / 3);
       min-width: calc( 100% / 3); } }
+
+.jump {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 100px; }
