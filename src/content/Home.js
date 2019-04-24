@@ -9,7 +9,7 @@ function Home() {
 				<section className="section-default">
 					<p className="font-h1"><Link to="/Resume">Joyce Lau</Link> is an interaction designer based in beautiful <a target="blank" href="https://www.google.com/maps/placelists/list/1Txuf3VoxvgevYPY3ZfRVgmjlqcU">Oakland,&nbsp;California</a>.</p>
 					<p className="font-h1">Currently writing narratives at <a href="http://github.com" target="blank">GitHub</a>, previously herding visual systems and wrangling sass at <a target="blank" href="https://pandora.com">Pandora</a>.</p>
-					<p className="font-body">I draw things on <a href="http://instagram.com/ohjoycelau" target="blank">Instagram</a>, but I'm also professional, so check out <a href="http://linkedin.com/in/ohjoycelau" target="blank">Linkedin</a>. <a href="mailto:ohjoycelau@gmail.com?subject=Ahoy!" target="blank">Drop&nbsp;a&nbsp;line</a> to chat.</p>
+					<p className="font-body">Projects to be updated soon. Stay tuned!</p>
 
 				</section>
 				<section className="section-full">
