@@ -9,20 +9,17 @@ function NewTV() {
 			<main>
 				<section className="section-default">
 					<p className="font-h1"><strike>Smallest</strike> Seamless</p>
-					<p className="font-body">From Iron Man to Wreck it Ralph, although portability and compactness are cool technological feats, the magic when something just works smartly is really where you go oooh~</p>
+					<p className="font-h2">From Iron Man to Wreck It Ralph, although portability and compactness is a signal for “high-tech”, the magic when something just works smartly is what makes you go ooooh~</p>
 				</section>
 				<section className="section-default section-center">
 					<video className="" autoPlay loop type="video/mp4" src={require("./images/newtv/0-home.mp4")} alt="A gif of Tony Stark and J.A.R.V.I.S."></video>
 				</section>
 				<section className="section-default font-body">
-					<p>With the last re-design, although improved usability, was simple and left the experience wanting. In a new iteration, I wanted to create space for intelligence and accommodate personality.</p>
-					<p>I revisited navigation, this time focusing on the elements of gesture, motion, and depth.</p>
+					<p>With the last re-design, although improved usability, was simple and left the experience wanting. In a new iteration, I wanted to create space for intelligence and accommodate personality. Gesture, motion and depth is what will bring the connected home <a target="blank" href="https://www.imdb.com/title/tt0583497/characters/nm0001455">into the 21st century</a>.</p>
 				</section>
 				<section className="section-full">
 					<img className="" src={require("./images/newtv/1-motion.gif")} alt="Lots of motion" />
 				</section>
-
-
 				<section className="section-default font-body">
 					<p className="font-h2">Persistence is key</p>
 					<p>Keeping navigation consistent here helps keep the user oriented, which we learned is especially important when you’re multi-tasking. I searched for a navigation that added value both in way finding and content.</p>
@@ -44,16 +41,19 @@ function NewTV() {
 				<section className="section-default font-body">
 					<p>The disunion also helps keep long press affordances consistent; long press &uarr; to get to the top of a list, long press &larr; to jump to the outermost scope (top-level navigation).</p>
 				</section>
+
 				<section className="section-full">
 					<video className="maxWidth-900" autoPlay loop type="video/mp4" src={require("./images/newtv/1-demo.mp4")} alt="Animating new navigation"></video>					
 				</section>
 				<section className="section-default font-body">
 					<p className="font-h2">J.A.R.V.I.S. is that you?</p>
 					<p>Just as J.A.R.V.I.S. reminds Tony Stark about his dates with Pepper, also calculates and advises on enemy weak points. I look forward to the day when Voice is readily available and smart enough on the platform, a direction Pandora was already <a href="https://www.theverge.com/2019/1/15/18183331/pandora-voice-mode-commands-music-streaming" target="blank">investing in</a>. Voice assists both menial and intelligent work. You can say ‘Hey Pandora, show me my Home Alone Jams playlist’ to ‘Hey Pandora, play me something new’.</p>
-					<p>The persistent side navigation allows Voice to take over without introducing a new visual pattern. It is balancing user feedback signals and content.</p>
 				</section>
 				<section className="section-full">
 					<img className="maxWidth-900" src={require("./images/newtv/1-voice.png")} />
+				</section>
+				<section className="section-default font-body">
+				<p>The persistent side navigation allows Voice to take over without introducing a new visual pattern. It is balancing user feedback signals and content.</p>
 				</section>
 
 
