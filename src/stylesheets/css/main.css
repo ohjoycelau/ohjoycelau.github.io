@@ -74,17 +74,17 @@ a {
 
 .button-left:after {
   content: "←";
-  font-family: -apple-system, BlinkMacSystemFont, 'Times New Roman';
+  font-family: 'Arial Black', -apple-system, BlinkMacSystemFont, 'Times New Roman';
   position: absolute;
   top: 0;
-  right: -1em; }
+  right: -1.25em; }
 
 .button-right:after {
   content: "→";
-  font-family: -apple-system, BlinkMacSystemFont, 'Times New Roman';
+  font-family: 'Arial Black', -apple-system, BlinkMacSystemFont, 'Times New Roman';
   position: absolute;
   top: 0;
-  right: -1em; }
+  right: -1.25em; }
 
 img {
   width: 100%;
@@ -173,9 +173,6 @@ img {
 
 .maxWidth {
   max-width: 100%; }
-
-.bg-grey {
-  background-color: rgba(0, 0, 0, 0.05); }
 
 .col-3 {
   width: calc( 100% / 3);
