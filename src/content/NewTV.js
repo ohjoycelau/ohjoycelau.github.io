@@ -11,10 +11,10 @@ function NewTV() {
 
 
 					<h3><strike>Smallest</strike> Seamless</h3>
-					<h2 className="my-4">From Iron Man to Wreck it Ralph, although portability and compactness are cool technological feats, the magic when something just works smartly is really where you go oooh~</h2>
+					<h2 className="my-4">From Iron Man to Star Wars, portability and compactness are cool feats, the magic when something just works is really where you go oooh~</h2>
 
 
-					<video className="new-ironman py-1" autoPlay loop type="video/mp4" src={require("./images/newtv/0-home.mp4")} alt="A gif of Tony Stark and J.A.R.V.I.S."></video>
+					<video className="new-ironman py-8" autoPlay loop type="video/mp4" src={require("./images/newtv/0-home.mp4")} alt="A gif of Tony Stark and J.A.R.V.I.S."></video>
 
 
 					<p>With the last re-design, although improved usability, was simple and left the experience wanting. In a new iteration, I wanted to create space for intelligence and accommodate personality.</p>
@@ -73,19 +73,19 @@ function NewTV() {
 				<section className="section-default mb-8">
 					<p>The persistent side navigation allows Voice to take over without introducing a new visual pattern. It is balancing user feedback signals and content.</p>
 					<h2 className="mt-12">“A re-style is where designers ruin your life by coming up with something prettier than they had previously come up with, resulting in you having to rewrite a bunch of CSS/LESS/SASS/etc”</h2>
-					<p>— Jacob Thornton, @<a href="https://twitter.com/fat" target="blank">fat</a></p>
-					<img className="my-2" alt="component library" src={require("./images/newtv/2-component.png")} />
+					<p className="mt-1">— Jacob Thornton, @<a href="https://twitter.com/fat" target="blank">fat</a></p>
+					<img className="mt-4 mb-1" alt="component library" src={require("./images/newtv/2-component.png")} />
 					<p>Have no fear, engineer — design systems to the rescue. As a part of the 2016 re-design, a component library and accompanying processes were successfully integrated into the 10 some people engineering team. A “re-style”? No&nbsp;problemo.</p>
 				</section>
 
 
 
-
-
 				<section className="section-default flex-between pt-8 pb-12">
-					<Link className="button" to="/">Back Home</Link>
-					<Link className="button button-inverted" to="/Pandora-Systems">Next Project</Link>
+					<h3><Link to="/Pandora-10ft">Previous</Link></h3>
+					<h3><Link to="/Pandora-Systems">Next Project</Link></h3>
 				</section>
+
+
 			</main>
 		</div>
 	)

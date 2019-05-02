@@ -9,6 +9,8 @@
  * =============================
  */
 
+$nav-pages: 5
+
 $font-body:		'Barlow', 'Helvetica', sans-serif
 $font-accent:	'Noto Serif JP', 'Georgia', serif
 
@@ -46,7 +48,12 @@ img, video
 	// max-width: 100%
 	width: 100%
 	height: auto
-
+hr
+	width: 4rem
+	height: 0.1rem
+	background-color: $color-primary
+	border: none
+	margin-left: 0
 
 
 /* 
@@ -87,13 +94,13 @@ h1,
 	font-family: $font-accent
 	font-size: $font-xl
 	font-weight: 900
-	line-height: 1.35em
+	line-height: 1.4em
 h2,
 .font-h2
 	font-family: $font-accent
 	font-size: $font-l
-	font-weight: 700
-	line-height: 1.55em
+	font-weight: 900
+	line-height: 1.45em
 h3,
 .font-h3
 	font-family: $font-body
@@ -241,8 +248,6 @@ a
  * =============================
  */
 
-$nav-pages: 7
-
 @mixin nav-tab
 	width: calc( 100% / #{$nav-pages} )
 	min-width: calc( 100% / #{$nav-pages} )
@@ -275,7 +280,6 @@ $nav-pages: 7
 	background-color: $color-primary
 	transition: left 200ms
 	@include nav-tab
-
 
 
 
@@ -319,7 +323,8 @@ $nav-pages: 7
 /* NewTV.js */
 .new
 	&-ironman
-		width: $width-default
+		max-width: $width-default
+		width: 100%
 
 
 /* Whiteboard.js */

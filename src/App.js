@@ -22,7 +22,7 @@ class App extends Component {
 
 /*eslint-disable no-undef*/
 	currentTo = (i, event) => {
-		document.getElementById('meter').style.left = "calc( 100% / 7 * " + i + ")";
+		document.getElementById('meter').style.left = "calc( 100% / 5 * " + i + ")";
 	}
 
 	logPageView = () => {
@@ -32,7 +32,7 @@ class App extends Component {
 
 	render() {
 
-		const navLinks = ["/", "/Pandora-10ft", "/Pandora-New-10ft", "/Pandora-Systems", "/Pandora-Dashboard", "/USC-Annenberg", "/Whiteboard-Sessions"]
+		const navLinks = ["/", "/Pandora-10ft", "/Pandora-New-10ft", "/Pandora-Systems", "/Whiteboard-Sessions"]
 
 		return (
 			<div>
@@ -63,8 +63,6 @@ class App extends Component {
 								<Route path="/Pandora-10ft" component={ATV} />
 								<Route path="/Pandora-New-10ft" component={NewTV} />
 								<Route path="/Pandora-Systems" component={Systems} />
-								<Route path="/Pandora-Dashboard" component={Eng} />
-								<Route path="/USC-Annenberg" component={Annenberg} />
 								<Route path="/Whiteboard-Sessions" component={Whiteboard} />
 								<Route path="/Resume" component={Resume} />
 							</main>

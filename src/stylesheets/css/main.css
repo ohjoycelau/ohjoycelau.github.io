@@ -21,6 +21,13 @@ img, video {
   width: 100%;
   height: auto; }
 
+hr {
+  width: 4rem;
+  height: 0.1rem;
+  background-color: #5A4A68;
+  border: none;
+  margin-left: 0; }
+
 /*
  * =============================
  * TYPOGRAPHY
@@ -60,14 +67,14 @@ h1,
   font-family: "Noto Serif JP", "Georgia", serif;
   font-size: 3.6rem;
   font-weight: 900;
-  line-height: 1.35em; }
+  line-height: 1.4em; }
 
 h2,
 .font-h2 {
   font-family: "Noto Serif JP", "Georgia", serif;
   font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 1.55em; }
+  font-weight: 900;
+  line-height: 1.45em; }
 
 h3,
 .font-h3 {
@@ -416,8 +423,8 @@ a {
   top: 0;
   padding: 0; }
   .global-nav a {
-    width: calc( 100% / 7);
-    min-width: calc( 100% / 7);
+    width: calc( 100% / 5);
+    min-width: calc( 100% / 5);
     height: 2rem;
     font-size: 0;
     display: block;
@@ -435,8 +442,8 @@ a {
   min-height: 0.75rem;
   background-color: #5A4A68;
   transition: left 200ms;
-  width: calc( 100% / 7);
-  min-width: calc( 100% / 7); }
+  width: calc( 100% / 5);
+  min-width: calc( 100% / 5); }
 
 /*
  * =============================
@@ -474,7 +481,8 @@ a {
 
 /* NewTV.js */
 .new-ironman {
-  width: 54rem; }
+  max-width: 54rem;
+  width: 100%; }
 
 /* Whiteboard.js */
 .wbs {

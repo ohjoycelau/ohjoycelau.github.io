@@ -151,8 +151,8 @@ function ATV() {
 
 
 				<section className="section-default flex-between pt-8 pb-12">
-					<Link className="button" to="/">Back Home</Link>
-					<Link className="button button-inverted" to="/Pandora-New-10ft">Next Project</Link>
+					<h3><Link to="/">Back Home</Link></h3>
+					<h3><Link to="/Pandora-New-10ft">Next Project</Link></h3>
 				</section>
 			</main>
 		</div>
