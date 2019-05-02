@@ -28,7 +28,7 @@ function Systems() {
 					<p>Interviewing designers and surveying engineers and product managers on their workflows and expectations revealed a pattern of mis-communication. A fragmented process yielded fragmented designs, fragmented teams, and ultimately a fragmented product.</p>
 
 
-					<h2 className="mt-8">“Clear is Kind”</h2>
+					<h2 className="mt-8"><a href="https://daretolead.brenebrown.com/" target="blank">“Clear is Kind”</a></h2>
 					<p className="mt-0">—Brené Brown</p>
 
 					<p>Pandora was no exception to the classic redlines-final.pdf and redlines-FINAL-final_final.pdf symptom. Out-of-date and conflicting documents caused engineering to spend time chasing redlines. Time was not just wasted, resentment builds up between teams with the lack of clarity.</p>

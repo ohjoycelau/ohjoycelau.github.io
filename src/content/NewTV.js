@@ -14,7 +14,7 @@ function NewTV() {
 					<h2 className="my-4">From Iron Man to Star Wars, portability and compactness are cool feats, the magic when something just works is really where you go oooh~</h2>
 
 
-					<video className="new-ironman py-8" autoPlay loop type="video/mp4" src={require("./images/newtv/0-home.mp4")} alt="A gif of Tony Stark and J.A.R.V.I.S."></video>
+					<img className="py-8" src={require("./images/newtv/0-jarvis.gif")} alt="JARVIS and Tony Stark" />
 
 
 					<p>With the last re-design, although improved usability, was simple and left the experience wanting. In a new iteration, I wanted to create space for intelligence and accommodate personality.</p>
@@ -55,7 +55,7 @@ function NewTV() {
 
 
 				<section className="section-full my-8">
-					<video className="width-900" autoPlay loop type="video/mp4" src={require("./images/newtv/1-demo.mp4")} alt="Animating new navigation"></video>					
+					<video className="width-900" autoPlay muted loop type="video/mp4" src={require("./images/newtv/1-demo.mp4")} alt="Animating new navigation"></video>					
 				</section>
 
 

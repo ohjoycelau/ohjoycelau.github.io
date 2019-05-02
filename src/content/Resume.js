@@ -8,7 +8,7 @@ function Resume() {
 				<section className="section-default my-12">
 
 
-					<h1 className="pb-2"><Link exact to="/">joyce lau</Link> is an interaction designer, lover of cat memes and tea</h1>
+					<h1 className="pb-2"><Link exact to="/">joyce lau</Link> is an interaction designer, lover of cat memes and&nbsp;tea</h1>
 
 
 					<p className="pt-2">sept 2018 — present</p>

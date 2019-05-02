@@ -12,7 +12,7 @@ function Home() {
 					<h1 className="pb-2"><Link to="/Resume">joyce lau</Link> is an interaction designer based in beautiful <a href="https://goo.gl/maps/mCNrfEDSB3Uy53wF9" target="blank">oakland, california</a></h1>
 					
 
-					<h2 className="pb-2">currently writing narratives at <a href="http://github.com" target="blank">github</a> previously herding visual systems and wrangling sass at <a href="http://pandora.com" target="blank">pandora</a>.</h2>
+					<h2 className="pb-2">currently writing narratives at <a href="http://github.com" target="blank">github</a> previously herding visual systems and wrangling sass at <a href="http://pandora.com" target="blank">pandora</a></h2>
 					
 
 					<ul className="font-h2">

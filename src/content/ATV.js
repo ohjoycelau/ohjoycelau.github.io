@@ -133,7 +133,7 @@ function ATV() {
 
 				<section className="section-full py-8 atv-browse">
 					<img className="width-900 frame" src={require("./images/atv/3-frame.png")} />
-					<video className="mov" autoPlay loop type="video/mp4" src={require("./images/atv/3-browse.mp4")} ></video>
+					<video className="mov" autoPlay muted loop type="video/mp4" src={require("./images/atv/3-browse.mp4")} ></video>
 				</section>
 
 
