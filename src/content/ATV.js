@@ -5,126 +5,154 @@ import { BrowserRouter as Router, Route, Link, } from 'react-router-dom';
 function ATV() {
 	return (
 		<div>
+			<main className="font-body">
 
-			<main>
-				<section className="section-default">
-					<p className="font-h1">Who even watches tv anymore?</p>
-					<p className="font-h2">Time for television's digital renaissance</p>
-					<p className="font-body">
+				<section className="section-default py-8">
+
+
+					<h3>Who even watches TV anymore?</h3>
+					<h2 className="my-4">In 2016, people increasingly welcomed smart streaming devices into their homes; meanwhile, Pandora geared up to compete in the on-demand world of music streaming.</h2>
+
+
+					<img alt="LOGO" className="py-8" src={require("./images/atv/0-splash.png")} />
+
+
+					<p>Pandora on television at that point had not been updated since it’s initial release in 2013. We were in dire need of a refresh.</p>
+					<p>I led design on a tight-knit team of 8 engineers, product manager and various platform partners like Roku and Comcast. It was a balancing act prioritizing product and business development goals while delivering a compelling user experience. </p>
+					<p>Our goals were to:
 						<ul>
-							<li>According to E-marketer, in 2017, Connected TV users grew by over 30.8% in the US</li>
-							<li>2017 was a significant year as Pandora jumped into the on-demand world</li>
+							<li>Launch a new experience in 6 months</li>
+							<li>Achieve feature parity with Pandora on mobile</li>
+							<li>Drive deeper engagement with content</li>
 						</ul>
 					</p>
-				</section>
-				<section className="section-default">
-					<img src={require("./images/atv/0-splash.png")} />
-				</section>
-				<section className="section-default font-body">
-					<p className="font-h2">My Role</p>
-					<p><b>The Team</b><br/>
-					Since the end of 2016, I lead design to unify the connected tv experience at Pandora. Working alongside a researcher, a product manager, and a team of engineers, I helped conduct research, executed prototyping and visual design and directed the accompanying component library.</p>
-					<p><b>Planning and Scoping</b><br/>
-					We were tasked to achieve feature parity within 6 months of mobile’s launching. We created a vision for the television experience and organized them into attainable milestones. I advocated and negotiated for the user while balancing business goals and technical debt.</p>
-					<p>I prioritized user goals by identifying major user flows and pain-points and created a design language for common patterns, delivering them from the most global to niche. This way, I was able to coordinate with the engineering team to stagger deliverables with their back-end workload.</p>
-					<p><b>Technologies and Documentation</b><br/>
-					With the momentum from the Design Systems team that I lead, the new tv experience was built on a cohesive design language. We built the experience to be platform agnostic to ensure a unified experience in a forward thinking connected home.</p>
-				</section>
-				<section className="section-default font-body">
-					<p className="font-h2">Changing Expectations</p>
-					<p>While Connected Home users were growing year over year, month to month uniques were dropping. We identified the perception of limited content and lack of feature parity between devices were driving users to competitors.</p>
-					<p><b>The 10' Experience</b><br/>
+
+
+					<h2 className="pt-8">Changing Expectations</h2>
+					<p>In addition to the market clearly taking to smart televisions, there was already traction within the Pandora user base. Connected home users were growing year over year:
 						<ul>
-							<li>As a music app, viewing distance varies upwards of 10’</li>
-							<li>The tv is often located in a common area</li>
-							<li>Multitasking mindset for various reasons</li>
-							<li>D-pad navigation, i.e. no cursor and linear navigation</li>
-							<li>Varied capabilities depending on the platform </li>
+							<li>30-50% of logins used Pandora exclusively on the television</li>
+							<li>Roughly 50% of daily active users were under 24</li>
 						</ul>
 					</p>
-					<p>Of connected home users, around 30-50% were exclusive to the tv platform with roughly 50% under the age of 24. Each device and each segment had varying expectations that also changed with the situation of their public space. Without fragmenting our experience, navigation needed to accommodate for a dynamic public space and a larger library while maintaining a path of least clicks.</p>
+					<p>While designing for a much larger screen, I had to consider the physical context of a Pandora listener in their home:
+						<ul>
+							<li>The television tends to be located in common area, potentially with multiple listeners.</li>
+							<li>Televisions are the music device of choice because it is connected to the best sound system in the house.</li>
+							<li>As a music app, the 10’ viewing distance is layered with listening distance.</li>
+							<li>It is unlikely that a user is solely focused on Pandora.</li>
+							<li>Capabilities varied greatly from platform to platform, e.g. xBox vs FireTV.</li>
+						</ul>
+					</p>
+					<p>On top of that, navigating a d-pad is, at best, frustrating.</p>
 				</section>
+
+
 				<section className="section-full">
-					<img className="maxWidth-900" src={require("./images/atv/0-remote.jpg")} />
+					<img alt="REMOTES" className="width-900 py-8" src={require("./images/atv/0-remote.jpg")} />
 				</section>
-				<section className="section-default font-body">
-					<p className="font-h2">Initial Research</p>
-					<p>User interviews showed 75% of users found our existing Browse feature helpful. At the same time, we observed that our competitors tend to forgo deeper layers of content on the tv. We took the recent expansion Pandora’s product into on-demand as an opportunity to recapture those users.</p>
-					<p>Our extended feature set needed to be powerful but still simple to navigate on the tv. We sought to minimize user required actions by maximizing Pandora’s powerful music algorithms.</p>
-					<p><b>The Multitasking Homebody</b><br/>
-					Typically the best sound system in the home was the tv that could reach most areas in the home. Located in primarily in a common space, users can shift quickly between a lean back and lean forward mindsets.</p>
-					<p>
+
+
+				<section className="section-default">
+					<h2>The Multitasking Homebody</h2>
+					<p>At the outset of the re-design, we did not have a clear picture of our users. Gathering data from our researcher and analysts, I pieced together insights and defined two guiding personas for the home experience:
 						<ul>
-							<li>The Busi-body</li>
-								<ul><li>Hands are occupied with different tasks</li>
-								<li>Likely more than 10’ away, coming in and out of an area often</li></ul>
-							<li>The Activity Bundler</li>
-								<ul><li>Past-time activities with music on</li>
-								<li>Potentially closer the the sound system</li></ul>
+							<li><b>The Busybody</b>
+								<ul>
+									<li>Their hands are occupied with different tasks.</li>
+									<li>They are likely more than 10’ away, coming in and out of an area often.</li>
+								</ul>
+							</li>
+							<li><b>The Activity Bundler</b>
+								<ul>
+									<li>Usually they are enjoying other past-time activities with music on.</li>
+									<li>Often focused on a different activity though within earshot.</li>
+								</ul>
+							</li>
 						</ul>
 					</p>
-					<p>By nature of the tv, users are tied to a remote, and moving quickly between at home tasks did not give much time to find the remote.</p>
+
+
+					<h2 className="pt-8">Early Insights</h2>
+					<h3>Designing for accessibility</h3>
+					<p>Improving our accessibility standards also improves the experience for a distracted user.</p>
+					
+
+						<img alt="OLD PANDORA" className="pt-3" src={require("./images/atv/0-before.jpg")} />
+						<span className="font-caption">An old experience of Pandora on most smart TVs circa 2013</span>
+
+
+					<h3>Moving information</h3>
+					<p>I observed that users often played “spot-the-difference” with the remote to figure out where they were on the screen. Not ideal if you want to save a song but have get back to the dishes with the water still running.</p>
+					<p>Horizontal navigation was prevalent in the television ecosystem; however with Pandora’s expanded content library, multi-taskers will potentially face much more information.</p>
+					<p className="mb-6">I conducted a usability study comparing various x/y axis oriented catalogs. As expected, vertical lists were most intuitive to parse. Users were able to discerned sorting logic with vertical orientations much quicker than horizontal.</p>
 				</section>
-				<section className="section-default font-body">
-					<p className="font-h2">Our Approach</p>
-					<p><b>Designing for accessibility</b></p>
-					<img src={require("./images/atv/0-before.jpg")} />
-					<span className="font-caption">Pandora on TV circa 2014</span>
-					<p>Because Pandora was often paired with other activities around the house, designing for the temporarily incapacitated or distracted user was important. By fulfilling accessibility requirements, it also improves the experience of the multitasking mindset.</p>
-					<p>I began with defining a clear system in our top navigation. When a user returns briefly to interact with the tv, clearly identifying their current location takes ‘spot the difference’ out of the experience. Picking up the remote no longer became a guessing game.</p>
+
+
+				<section className="section-full flex-center atv-org">
+					<img className="move" src={require("./images/atv/2-moveA.gif")} />
+					<img className="move" src={require("./images/atv/2-moveB.gif")} />
 				</section>
-				<section className="section-default font-body">
-					<p><b>A Global Fixed Navigation</b><br/>
-					A fixed top navigation grounded users where they were. We extended the thick white boarder pattern through the rest of the platform and reserved that ui pattern to indicate current location.</p>
+
+
+				<section className="section-default pt-8">
+					<h3 className="mt-6">Grounding navigation</h3>
+					<p>A global navigation is a reliable visual anchor and clue. Fixed to the top of the screen, a user is able to quickly orient themselves in Pandora.</p>
+					<p>Accessibility in the navigation was tested most throughly, landing on a solid enclosed border as foundation. For clarity, there must be at least and only one fully enclosed white boarder at any given time.</p>
 				</section>
-				<section className="section-full">
+
+
+				<section className="section-full my-8">
 					<img src={require("./images/atv/1-globalnav.jpg")} />
 				</section>
-				<section className="section-default font-body">
-					<p><b>Movement through a flat space</b><br/>
-					Horizontal navigation is prevalent on the television; however as our multi-tasking users now faced a larger content library, I hypothesized reading laterally was not ideal for our users. I conducted tests with various x/y axis oriented catalogs.</p>
-				</section>
-				<section className="section-full col-flex">
-					<img className="atv-move" src={require("./images/atv/2-moveA.gif")} />
-					<img className="atv-move" src={require("./images/atv/2-moveB.gif")} />
-				</section>
-				<section className="section-full">
-					<img src={require("./images/atv/2-grids.png")} />
-				</section>
-				<section className="section-default font-body">
-					<p>In the end, vertical navigation was easiest to read and understand. The familiar format made browsing though lists and understanding the organization logic much more intuitive.</p>
-				</section>
-				<section className="section-full bg-grey">
-					<section className="section-default font-body">
-						<p><b>Launched to Android TV</b>
-							<ul>
-								<li>Redesigns started in the fall of 2016 and launched by March 2017</li>
-								<li>In the past year of the app being live, year over year growth has increased by 30%</li>
-								<li>Sessions have increased by over 20%</li>
-								<li>Listener support has received 37% fewer device feature parity requests</li>
-							</ul>
-						</p>
-					</section>
-					<section className="section-full">
-						<img className="maxWidth-900 padding-bottom-8rem" src={require("./images/atv/3-np.png")} />
-						<div className="maxWidth-900 padding-bottom-8rem atv-browse">
-							<img className="frame" src={require("./images/atv/3-frame.png")} />
-							<video className="mov" autoPlay loop type="video/mp4" src={require("./images/atv/3-browse.mp4")} ></video>
-						</div>
-					</section>
-				</section>
 
-				<section className="section-default font-body">
-					<p className="font-h2">A Continuing Journey</p>
-					<p>As it often is, scope was highly influenced by the speed to market factor. There were many aspects of navigation and feature parity that were de-scoped from this initial release. We continue to test and explore concepts that were backlogged as well as pursue new ideas for a more connected Pandora experience.</p>
+
+				<section className="section-default">
+					<p>In retrospect, the final execution of the active object state could be emphasized even further with other principles such as scale, motion and/or an even more conspicuous border treatment.</p>
+
+
+					<h2 className="pt-8">Launching and Impact</h2>
+					<ul>
+						<li>The re-design launched in March 2017, with on-demand features quickly following in the Fall.</li>
+						<li>After the launch, we saw year-over-year user growth increase by 30%.</li>
+						<li>Listening hours increased over 20%.</li>
+						<li>Listener Support received 37% fewer device feature parity requests.</li>
+					</ul>
 				</section>
 
 
-				<section className="section-full bg-grey">
-					<section className="section-last section-nav">
-						<Link className="button" to="/">Back Home</Link>
-						<Link className="button button-inverted" to="/Pandora-New-10ft">Next Project</Link>
-					</section>
+				<section className="section-full py-8">
+					<img className="width-900" src={require("./images/atv/3-np.png")} />
+				</section>
+
+
+				<section className="section-default">
+					<p>Opening the app up to our recommendations page, Browse, contributed to more new listening sessions created.</p>
+				</section>
+
+
+				<section className="section-full py-8 atv-browse">
+					<img className="width-900 frame" src={require("./images/atv/3-frame.png")} />
+					<video className="mov" autoPlay loop type="video/mp4" src={require("./images/atv/3-browse.mp4")} ></video>
+				</section>
+
+
+				<section className="section-default">
+					<h2>A Continuing Journey</h2>
+					<p>Scope and timing was heavily influenced by our platform partners. There were many aspects of navigation and feature parity that were de-scoped from the initial release.</p>
+					<p>Through this process, I began strategizing how to move away from being Business Development led to Product led. I continued to pursue new concepts and technologies for a more connected Pandora experience.</p>
+
+				</section>
+
+
+				<section className="section-full py-8">
+					<img className="width-900" alt="GRIDS" src={require("./images/atv/2-grids.png")} />
+				</section>
+
+
+				<section className="section-default flex-between pt-8 pb-12">
+					<Link className="button" to="/">Back Home</Link>
+					<Link className="button button-inverted" to="/Pandora-New-10ft">Next Project</Link>
 				</section>
 			</main>
 		</div>

@@ -25,19 +25,7 @@ $color-primary:		$color-purpleBlue
 $color-accent:		$color-pink
 $color-background:	$color-lightTeal
 
-// @mixin underline($foreground, $background: $color-background)
-// 	text-decoration: none
-// 	position: relative
-// 	text-shadow: 0em -0.07em $background, 0em 0.07em $background, -0.07em -0.04em $background, -0.07em 0.015em $background, -0.07em 0.07em $background, 0.04em -0.04em $background, 0.04em 0.07em $background, 0.04em 0.015em $background
-// 	&:before
-// 		content: ""
-// 		z-index: -1
-// 		position: absolute
-// 		bottom: 0.1em
-// 		left: 0
-// 		width: 100%
-// 		height: 0.05em
-// 		background-color: $foreground
+$width-default: 54rem
 
 
 
@@ -50,22 +38,12 @@ $color-background:	$color-lightTeal
 html, body
 	padding: 0
 	margin: 0
-	max-width: 100vw
-	overflow-x: hidden
+	// max-width: 100vw
+	// overflow-x: hidden
 	background-color: $color-background
-
-ul
-	list-style: none
-	margin: 0 1em
-	padding: 0
-	li:before
-		content: "―"
-		width: 1em
-		display: inline-block
-		margin-left: -1em
-img
+img, video
 	display: block
-	max-width: 100%
+	// max-width: 100%
 	width: 100%
 	height: auto
 
@@ -87,17 +65,23 @@ body
 .font-body
 	font-size: $font-m
 	font-family: $font-body
-	line-height: 1.65em
+	line-height: 1.5em
 .font-bold
-	font-weight: bold
+	font-weight: 900
+.font-caption
+	font-size: $font-s
 h1, h2, h3, h4, h5, h6,
 .font-h1, .font-h2, .font-h3
 	padding: 0
-	margin-top: 2em
-	margin-bottom: 1em
+	margin-top: 1.75em
+	margin-bottom: 0
 	font-size: inherit
 	font-weight: inherit
 	line-height: inherit
+	// margin-block-start: 0
+	// margin-block-end: 0
+	// margin-inline-start: 0
+	// margin-inline-end: 0
 h1,
 .font-h1
 	font-family: $font-accent
@@ -118,11 +102,25 @@ h3,
 	line-height: 1.6em
 p
 	padding: 0
-	margin: 1em 0
+	margin-top: 1.25em
+	margin-bottom: 0
+ul, ol
+	margin: 0.5em 0 0.5em 2em
+	padding: 0
+ol 
+	list-style-type: lower-alpha
+ul
+	list-style: none
+	li:before
+		content: "―"
+		width: 1em
+		display: inline-block
+		margin-left: -1em
 a
 	position: relative
 	color: $color-primary
 	text-decoration: none
+	z-index: 0
 	&:before
 		background-color: $color-accent
 		transition: all 180ms
@@ -172,19 +170,46 @@ a
  */
 
 @each $n in (m p)
-	@for $i from 0 through 8
+	@for $i from 0 through 12
 		$property: ""
+		$x: ""
 		@if $n == m 
 			$property: margin
+			$x: auto
 		@else if $n == p
 			$property: padding
+			$x: 0
 		$unit: $i * 0.8
 		.#{$n}y-#{$i}
-			#{$property}: #{$unit}rem 0
+			#{$property}: #{$unit}rem #{$x} !important
 		.#{$n}t-#{$i}
-			#{$property}-top: #{$unit}rem
+			#{$property}-top: #{$unit}rem !important
 		.#{$n}b-#{$i}
-			#{$property}-bottom: #{$unit}rem
+			#{$property}-bottom: #{$unit}rem !important
+
+.width-100
+	width: 100%
+	margin: auto
+.width-900
+	max-width: 90rem
+	width: 90%
+	margin: 0 auto
+.width-full
+	width: 100%
+	// margin: auto
+
+.section-default
+	max-width: $width-default
+	width: 90%
+	margin: auto
+	display: block
+.section-full
+	width: 100%
+	margin: auto
+	display: block
+	// display: inline-block
+	// transform: translateX(-50%)
+	// margin: 0 50%
 
 .d-none
 	display: none
@@ -194,6 +219,7 @@ a
 	display: inline
 .d-inline-block
 	display: inline-block
+
 .flex-between
 	display: flex
 	justify-content: space-between
@@ -201,41 +227,10 @@ a
 	display: flex
 	justify-content: center
 	align-items: center
-.width-100
-	width: 100%
-	margin: auto
-.width-900
-	max-width: 90rem
-	width: 90%
-	margin: auto
-.width-full
-	width: 100%
-	margin: auto
-
-.section-default
-	max-width: 54rem
-	width: 90%
-	margin: auto
-	display: block
-.section-full
-	width: 100vw
-	display: inline-block
-	transform: translateX(-50%)
-	margin: 0 50%
-
-
-
-@mixin col-3
-	width: calc( 100% / 3 )
-	min-width: calc( 100% / 3 )
-@mixin col-flex
+.flex-column
 	display: flex
 	flex-direction: row
 
-.col-3
-	@include col-3
-.col-flex
-	@include col-flex
 
 
 
@@ -248,7 +243,7 @@ a
 
 $nav-pages: 7
 
-@mixin col-nav
+@mixin nav-tab
 	width: calc( 100% / #{$nav-pages} )
 	min-width: calc( 100% / #{$nav-pages} )
 
@@ -257,26 +252,29 @@ $nav-pages: 7
 	width: 100%
 	position: fixed
 	top: 0
-	@include col-flex
+	padding: 0
 	a
-		@include col-nav
-		height: 0.75rem
+		@include nav-tab
+		height: 2rem
 		font-size: 0
 		display: block
 		box-sizing: border-box
-		border-top: 0.25rem solid $color-primary
-		// background-color: pink
+		// border-top: 0.25rem solid $color-primary
 		&.active
 			// background-color: $color-primary
+		&:before
+			display: none
 #meter
 	z-index: 999
 	position: fixed
-	top: 0
+	top: 0.4rem
 	left: 0
-	@include col-nav
+	display: flex
+	flex-direction: row
 	min-height: 0.75rem
 	background-color: $color-primary
 	transition: left 200ms
+	@include nav-tab
 
 
 
@@ -290,29 +288,43 @@ $nav-pages: 7
 
 /* ATV.js */
 .atv
-	&-move
-		width: 44.5%
+	&-org
+		background-color: white
+		.move
+			max-width: 64rem
+			width: 47%
 	&-browse
 		position: relative
+		height: 100%
+		display: block
 		.frame
 			z-index: 1
 			position: relative
+			display: block
 		.mov
-			z-index: -1
+			z-index: 0
+			display: block
 			position: absolute
-			top: 1%
+			top: -3%
 			left: 0
 			right: 0
 			margin-left: auto
 			margin-right: auto
-			width: 84.5%
-			box-sizing: content-box
-			border: 0.2rem solid black
+			width: 76.5%
+			max-width: 76.5rem
+			height: 100%
+			box-sizing: border-box
+
+
+/* NewTV.js */
+.new
+	&-ironman
+		width: $width-default
 
 
 /* Whiteboard.js */
 .wbs
-	background-image: url('./../../content/images/wbs/0-vert.png');
+	background-image: url('./../../content/images/wbs/0-vert.png')
 	background-repeat: no-repeat
 	background-size: contain
 	overflow: hidden
@@ -338,8 +350,8 @@ $nav-pages: 7
 @media screen and (min-width: 678px)
 	.wbs
 		flex-direction: row
-		background-image: url('./../../content/images/wbs/0-hor.png');
+		background-image: url('./../../content/images/wbs/0-hor.png')
 		&-yt
-			@include col-3
+			// @include col-3
 
 

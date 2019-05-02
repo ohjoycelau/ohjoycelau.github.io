@@ -41,7 +41,7 @@ class App extends Component {
 				</Helmet>
 				<HashRouter onUpdate={this.logPageView}>
 					<div>	
-						<nav className="global-nav">
+						<nav className="global-nav flex-column">
 
 							<div id="meter"></div>
 
