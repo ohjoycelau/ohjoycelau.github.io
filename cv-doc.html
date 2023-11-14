@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Hello World!</title>
+
+    <!-- The website stylesheet -->
+
+    <link rel="stylesheet" href="/style.css" />
+    <style>
+      .iframe {
+        position: relative;
+        display: block;
+        width: 100%; height: 100%;
+        padding: 40vh 0;
+      /*   background: lightBlue; */
+        & iframe {
+          display: block;
+          position: absolute;
+          top: 0; bottom: 0; left: 0; right: 0;
+          width: 100%; height: 100%;
+        }
+      }
+    </style>
+    
+    <!-- The website JavaScript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <span><a href="/">&LeftArrow; Back</a></span>
+      <h1 class="page-title">
+        02 CV
+      </h1>
+    </header>
+    <section class="iframe">
+      <iframe src="https://docs.google.com/document/d/e/2PACX-1vQhZjMjng_wdgiGDG7skD4hG49dBw56Zi0hl84HcPRLitGmqT6FrJLq0U0S_1AZssgbTDzrYZrnNuOb/pub?embedded=true"></iframe>
+    </section>
+    <footer class="footer">
+    </footer>
+  </body>
+</html>
